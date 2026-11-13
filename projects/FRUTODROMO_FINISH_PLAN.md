@@ -61,3 +61,8 @@ Ao concluir, atualizar `QA_CLAUDE.md` na branch de trabalho e comunicar ao propr
 
 ## Mensagem inicial ao Claude
 > Você está atuando no fechamento do Frutódromo junto ao ChatGPT. Leia AGENTS.md, CLAUDE.md, projects/FRUTODROMO.md e este plano; depois inspecione a branch stage9-dynamic-difficulty do jogo e os arquivos ROADMAP.md e REGRESSION_2026-11-13.md. Sua responsabilidade primária é regressão de interface, Safari/iPhone/PWA e performance. Trabalhe em branch própria, preserve main e a branch de homologação, documente evidências e entregue PRs pequenos. Não adicione mecânicas, não altere a dificuldade/pedidos/saves sem combinar, e não publique. Primeiro produza o inventário de riscos e um roteiro de testes executável; corrija somente problemas comprovados e documentados.
+
+## Atualização independente do ChatGPT — 2026-11-13
+- Corrigido o reinício da dificuldade adaptativa quando o jogador confirma **Novo Jogo**, commit `9cf9575e965f69c4a08b70af8febf42cb4b45927` em `stage9-dynamic-difficulty`.
+- Motivação: o estado `DIFF` era persistido fora do save principal; um novo jogo herdava sequência de desempenho anterior. Agora o fluxo explícito de Novo Jogo zera o estado em memória e remove a chave local correspondente.
+- Não alterar a branch principal. Ainda faltam testes reais de execução, save, PWA e regressão completa. Claude deve usar a branch mais recente como base ao iniciar e não presumir que o link Cloudflare esteja atualizado.
