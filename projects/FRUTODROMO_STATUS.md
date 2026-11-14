@@ -4,6 +4,19 @@ Verificação: 14/11/2026, consulta ao GitHub pelo Codex.
 Prioridade do Eric: fechar o Frutódromo para o CrazyGames e preparar a fila do estúdio.
 Fila: [QUEUE.md](QUEUE.md).
 
+## Site publicado — 14/11/2026
+- [PR #26](https://github.com/Mendesoz/frutodromo/pull/26) integrado em `main`: `b47570338531fe1ac7c5782bce2b17084e563296`.
+- [Deploy do GitHub Pages](https://github.com/Mendesoz/frutodromo/actions/runs/43601972688): concluído com sucesso. Codex conferiu o endereço público servindo `frutodromo-v46`, a correção LOG-06 e o novo tutorial.
+- Site: https://mendesoz.github.io/frutodromo/ .
+- A promoção reuniu os relatórios/evidências e o zip do QA final do Claude. A única alteração adicional de execução foi o cache v45→v46, conforme a regra do repositório.
+- Sintaxe, sete testes de dificuldade e fluxo de jogo nas quatro resoluções: PASS. Atualização real de cache e três reaberturas offline com progresso e fonte preservados: PASS, 14 arquivos em cache, zero erros JS.
+- [Relatório adicional](https://github.com/Mendesoz/frutodromo/blob/main/QA_PUBLICATION_CODEX_2026-11-14.md).
+- Zip do portal permanece igual ao testado, sem SW: 129.678 bytes; SHA-256 `3a248e560081253c7798e243c6410973b6dfacbd21f01b43eefbca102a97be0e`.
+- Materiais, texto e documentos reunidos em um pacote de entrega. Não houve submissão ao CrazyGames.
+- **Único bloqueio de acesso atual:** o painel CrazyGames foi aberto em navegador oculto e está sem sessão autenticada. Eric precisa entrar na conta nessa sessão para o Codex continuar upload, QA Tool real e reenvio. Não solicitar senha por mensagem.
+- Aprovação da candidata, materiais e avanço para o envio já recebida. Não pedir a mesma aprovação novamente; tratar somente novos bloqueios concretos ou exigências do painel.
+- Configuração de produção do domínio Cloudflare não foi alterada nem inferida; a publicação confirmada acima é GitHub Pages.
+
 ## Fechamento verificado — 14/11/2026, após o QA final
 - Claude concluiu a tarefa 9 com PASS sobre `4c6608de42cf9dd76e635d487d727ede9fb017f9`. [Relatório completo](https://github.com/Mendesoz/frutodromo/blob/qa-claude-release/QA_RELEASE_CLAUDE_2026-11-14.md), branch `qa-claude-release` em `82e8409`; o código do jogo não mudou.
 - PRs [#24](https://github.com/Mendesoz/frutodromo/pull/24) e [#25](https://github.com/Mendesoz/frutodromo/pull/25) integrados na Stage 9 após a aprovação do Eric e o QA final. HEAD: `eb216fbf56e423cc986daaca7e81a8a2fa4ca52e`. Codex conferiu com Git que sua árvore é idêntica à candidata testada.
