@@ -29,7 +29,7 @@ Manter nesta versão LOG-01 (progressão/profundidades), LOG-02 (VIP), LOG-03 (e
 | Correção aprovada LOG-06 e regressão de lógica | Codex | Concluído em `cd869d1`; 7/7 testes e checagem de navegador aprovados |
 | Capas e vídeo atuais | Claude + Eric aprova | Gerados em `f314d30`; aguardam aprovação do Eric |
 | Candidata integrada com SHAs fixados | Codex + revisão Claude | Disponível no PR #25, SHA `4c6608de42cf9dd76e635d487d727ede9fb017f9`; sem promoção de main/stage9 |
-| Regressão final, zip e QA Tool do portal | Claude + Eric | Tarefa 9 pronta para iniciar sobre a candidata fixada; resultado final pendente |
+| Regressão final, zip e QA Tool do portal | Claude + Eric | Candidata entregue à sessão em andamento por CLI (envio confirmado); início e resultado final ainda aguardam evidência no GitHub |
 | Aprovação do material e do envio/publicação | Eric | Pendente |
 
 Tentar preparar o reenvio hoje é uma meta de trabalho, não uma garantia. O CrazyGames [revê as submissões](https://docs.crazygames.com/) e separa Basic Launch e Full Launch; o [Basic Launch](https://docs.crazygames.com/resources/basic-launch-metrics/) tem avaliação de 7 a 21 dias.

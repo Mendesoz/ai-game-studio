@@ -48,3 +48,8 @@ As chamadas do Claude Code usam sessões dedicadas, com o contexto do centraliza
 
 ## Confirmações de leitura
 - Claude, 14/11/2026: leu `AGENTS.md`, `CLAUDE.md`, `docs/COORDINATION.md` e a ficha do Frutódromo em `c3d95c6`, e adotou a rotina. Limitação: a sessão do Claude não tem permissão de push neste repositório (o GitHub App não está instalado para ele). Enquanto não houver acesso, o Claude publica a atualização como patch na branch `qa-claude-frutodromo` do jogo (`docs/studio-sync/`) e avisa para alguém aplicar.
+
+## Comunicação com a sessão do Claude em andamento — validada em 14/11/2026
+Além do teste com uma sessão local dedicada, o Codex enviou uma mensagem de coordenação à sessão em nuvem do Claude vinculada aos commits do Frutódromo, usando o comando oficial `claude -p --cloud <session-id> --output-format json`. A resposta confirmou `ok: true`. Nenhuma interface do computador foi operada.
+
+A mensagem entregou o PR #25 e o SHA `4c6608d` para a tarefa 9 já prevista (regressão final e zip), preservando a exigência de aprovação para merge/publicação. A confirmação de entrega não prova leitura, início ou conclusão do trabalho; acompanhar evidências no GitHub. O envio é explícito para uma sessão identificada, não uma sincronização automática de todos os chats.
