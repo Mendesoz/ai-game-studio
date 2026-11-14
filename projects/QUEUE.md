@@ -5,7 +5,7 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 ## Fila atual
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
-| 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Site GitHub Pages publicado; CrazyGames ainda sem reenvio nesta rodada | Pacote aprovado e QA local concluído; aguardar Eric entrar no painel, executar QA Tool e reenviar | Codex: integração/publicação/pacote; Claude: QA concluído; Eric: login no portal |
+| 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Site publicado; rascunho CrazyGames criado, envio manual com Eric | Eric conclui QA/formulário e informa o resultado; prévia falhou antes de carregar o jogo no navegador do Codex | Codex: integração/publicação/pacote concluídos; Claude: QA local concluído; Eric: envio manual |
 | 2 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 3 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
 

@@ -4,6 +4,15 @@ Verificação: 14/11/2026, consulta ao GitHub pelo Codex.
 Prioridade do Eric: fechar o Frutódromo para o CrazyGames e preparar a fila do estúdio.
 Fila: [QUEUE.md](QUEUE.md).
 
+## Envio manual assumido pelo Eric — 14/11/2026
+- Eric confirmou que outra pessoa já jogou e testou o jogo; a declaração correspondente foi preenchida.
+- Login resolvido. Codex criou um rascunho Basic Launch com o HTML da candidata aprovada, engine HTML5, save pelo SDK, suporte a celular em PORTRAIT e controle de mudo pelo SDK; sem multiplayer.
+- O portal não aceita ZIP nesta tela. O arquivo correto é o `index.html` extraído do pacote aprovado, 314.316 bytes; SHA-256 `447b6516fc31a88f43aab9eee0bebdfd615de5e820b2c3b336763ae62d42eb7e`.
+- A prévia/QA exibiu “Something went wrong...” antes de carregar o jogo, inclusive após recarga e autenticação da sessão do site. A causa não foi determinada. Não registrar QA Tool real como aprovado.
+- Eric assumiu o envio manual (“pode deixar que eu mesmo subo”). Codex interrompeu as ações de envio. Não criar outro rascunho nem reenviar automaticamente.
+- O jogo permanece como rascunho; não houve confirmação de submissão, aprovação ou lançamento no CrazyGames. Capas, vídeos e textos estão prontos no pacote entregue.
+- Próximo passo: Eric conclui o QA/formulário e comunica o resultado; então atualizar o estúdio com o estado efetivamente confirmado.
+
 ## Site publicado — 14/11/2026
 - [PR #26](https://github.com/Mendesoz/frutodromo/pull/26) integrado em `main`: `b47570338531fe1ac7c5782bce2b17084e563296`.
 - [Deploy do GitHub Pages](https://github.com/Mendesoz/frutodromo/actions/runs/43601972688): concluído com sucesso. Codex conferiu o endereço público servindo `frutodromo-v46`, a correção LOG-06 e o novo tutorial.
@@ -13,7 +22,7 @@ Fila: [QUEUE.md](QUEUE.md).
 - [Relatório adicional](https://github.com/Mendesoz/frutodromo/blob/main/QA_PUBLICATION_CODEX_2026-11-14.md).
 - Zip do portal permanece igual ao testado, sem SW: 129.678 bytes; SHA-256 `3a248e560081253c7798e243c6410973b6dfacbd21f01b43eefbca102a97be0e`.
 - Materiais, texto e documentos reunidos em um pacote de entrega. Não houve submissão ao CrazyGames.
-- **Único bloqueio de acesso atual:** o painel CrazyGames foi aberto em navegador oculto e está sem sessão autenticada. Eric precisa entrar na conta nessa sessão para o Codex continuar upload, QA Tool real e reenvio. Não solicitar senha por mensagem.
+- Login resolvido e envio manual assumido pelo Eric; ver atualização acima.
 - Aprovação da candidata, materiais e avanço para o envio já recebida. Não pedir a mesma aprovação novamente; tratar somente novos bloqueios concretos ou exigências do painel.
 - Configuração de produção do domínio Cloudflare não foi alterada nem inferida; a publicação confirmada acima é GitHub Pages.
 
