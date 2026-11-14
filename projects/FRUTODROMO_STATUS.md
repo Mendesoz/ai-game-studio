@@ -5,7 +5,7 @@ Prioridade do Eric: fechar o Frutódromo para o CrazyGames e preparar a fila do 
 Fila: [QUEUE.md](QUEUE.md).
 
 ## Estado observado
-- Claude: `qa-claude-frutodromo` em `d70b3550b1df93e5956caa7dfa4354d6eece2819`; [PR #24](https://github.com/Mendesoz/frutodromo/pull/24) para `stage9-dynamic-difficulty`.
+- Claude: `qa-claude-frutodromo` em `0170b41626c9db2de82eeea920d73bdc6ae2752a`; [PR #24](https://github.com/Mendesoz/frutodromo/pull/24) para `stage9-dynamic-difficulty`.
 - Codex: `qa-chatgpt-logic` em `3152724d6d56c51328c4517a72a51ba40b12ebde`, sincronizada anteriormente com `d89f8e5`; incorporar atualizações seguintes do Claude antes de consolidar.
 - `main` do jogo em `5cf0d73`; Stage 9 em `9cf9575`. Não houve merge nem nova publicação feitos pelo Codex nesta verificação.
 - A prévia do Claude foi publicada automaticamente em https://qa-claude-frutodromo.frutodromo.pages.dev/ conforme comentário do bot no PR. Isso não identifica a branch de produção do domínio principal.
@@ -14,27 +14,36 @@ Fila: [QUEUE.md](QUEUE.md).
 - Correção de entrega duplicada, traduções e suporte ao SW fora de github.io.
 - `10f43b7`: sombras em degraus de pixel e medição de áudio; volume geral baixo, mantido sem ajuste automático.
 - `9e67175`: Pular tutorial e mãozinha animada; cache v45. O relatório registra testes de tutorial, movimento reduzido, idioma e regressão sem erros no Chromium.
-- Capas e vídeo novos: próximos itens informados pelo Claude; não considerar concluídos até aparecerem evidências.
+- `f314d30`: capas e vídeos novos gerados com os sprites atuais: capas 1920×1080, 800×1200 e 800×800, vídeo paisagem de 20 s e retrato de 18 s, sem som. Conforme Claude, gravação sem erros; materiais aguardam aprovação do Eric. Scripts em `tools/marketing/`. Atualização do patch 14b incorporada pelo Codex.
 - [Tarefas e responsáveis](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/TAREFAS_CRAZYGAMES.md), [QA](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/QA_CLAUDE.md) e [handoff](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/QA_HANDOFF_CHATGPT_2026-11-14.md).
 - Codex está aplicando ao centralizador o conteúdo documental do [patch do Claude](https://github.com/Mendesoz/frutodromo/tree/qa-claude-frutodromo/docs/studio-sync), preservando as instruções de execução em segundo plano. A sessão atual do Claude relatou não ter push neste centralizador.
 
 ## Decisão de balanceamento aprovada pelo Eric em 14/11
-Corrigir apenas LOG-06: impedir peso negativo em `diffTier()`, mantendo a proporção dos pedidos médios quando a transferência fácil/difícil atingir o limite disponível. Implementação e testes ainda pendentes no momento deste registro.
+Corrigir apenas LOG-06: impedir peso negativo em `diffTier()`, mantendo a proporção dos pedidos médios quando a transferência fácil/difícil atingir o limite disponível. Implementado pelo Codex em `cd869d1`: sete testes automatizados de dificuldade passaram (três falhavam antes). Checagem de jogo em Edge/Chromium nas quatro resoluções obrigatórias passou sem erros. Sintaxe e save após recarga aprovados no escopo testado.
 Manter nesta versão LOG-01 (progressão/profundidades), LOG-02 (VIP), LOG-03 (erro e acerto como eventos) e LOG-04 (DIFF por aparelho). Não migrar saves.
 
 ## Itens para o reenvio
 | Item | Dono | Estado nesta verificação |
 |---|---|---|
-| Texto da página em português e inglês | Codex | Revisar para dicas, VIP, adaptação e escopo de orientação |
-| Correção aprovada LOG-06 e regressão de lógica | Codex | Próxima ação |
-| Capas e vídeo atuais | Claude + Eric aprova | Em andamento conforme Claude |
-| Candidata integrada com SHAs fixados | Codex + revisão Claude | Pendente; nenhuma autorização de merge presumida |
-| Regressão final, zip e QA Tool do portal | Claude + Eric | Pendente após candidata |
+| Texto da página em português e inglês | Codex | Concluído em `4a0e50a`; aguarda candidata final do portal |
+| Correção aprovada LOG-06 e regressão de lógica | Codex | Concluído em `cd869d1`; 7/7 testes e checagem de navegador aprovados |
+| Capas e vídeo atuais | Claude + Eric aprova | Gerados em `f314d30`; aguardam aprovação do Eric |
+| Candidata integrada com SHAs fixados | Codex + revisão Claude | Disponível no PR #25, SHA `4c6608de42cf9dd76e635d487d727ede9fb017f9`; sem promoção de main/stage9 |
+| Regressão final, zip e QA Tool do portal | Claude + Eric | Tarefa 9 pronta para iniciar sobre a candidata fixada; resultado final pendente |
 | Aprovação do material e do envio/publicação | Eric | Pendente |
 
 Tentar preparar o reenvio hoje é uma meta de trabalho, não uma garantia. O CrazyGames [revê as submissões](https://docs.crazygames.com/) e separa Basic Launch e Full Launch; o [Basic Launch](https://docs.crazygames.com/resources/basic-launch-metrics/) tem avaliação de 7 a 21 dias.
 
 No telefone a prioridade é retrato. Paisagem é relevante na janela desktop do portal. Testes extras de iPhone/PWA ficam para depois do marco CrazyGames, conforme escopo registrado pelo Claude e confirmado com as prioridades do Eric.
+
+## Candidata para a tarefa 9
+- Branch: [codex/crazygames-final-logic](https://github.com/Mendesoz/frutodromo/tree/codex/crazygames-final-logic).
+- SHA: `4c6608de42cf9dd76e635d487d727ede9fb017f9`.
+- [PR #25](https://github.com/Mendesoz/frutodromo/pull/25), draft contra Stage 9, aguardando QA. O GitHub indicou integração limpa; não houve merge.
+- Contém as alterações do Claude até `0170b41`, inclusive capas/vídeos, os documentos de lógica anteriores, LOG-06 e o texto da página.
+- Relatório: [QA_RELEASE_CODEX_2026-11-14.md](https://github.com/Mendesoz/frutodromo/blob/codex/crazygames-final-logic/QA_RELEASE_CODEX_2026-11-14.md).
+- Claude pode executar a regressão e gerar o pacote dessa branch sem esperar uma promoção de `main` ou `stage9`. Qualquer nova atualização da candidata requer registrar novo SHA e validar a mudança.
+- CSS, tutorial, `sw.js` e scripts de QA do Claude foram preservados. Coordenar cache na promoção final do site/PWA; isso não impede o build separado do portal.
 
 ## Como retomar
 1. Consultar o HEAD remoto e os comentários mais recentes do PR #24.
