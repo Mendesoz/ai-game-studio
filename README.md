@@ -11,4 +11,7 @@ Comece por `AGENTS.md`, `CLAUDE.md` e `docs/WORKFLOW.md`. Cada jogo terá reposi
 - `docs/METRICS.md`: métricas e hipóteses comerciais.
 - `docs/ART_AUDIO.md`: diretrizes de criação visual e sonora.
 - `templates/GAME_BRIEF.md`: modelo de proposta de jogo.
-- `projects/FRUTODROMO.md`: referência técnica somente leitura.
+- `projects/QUEUE.md`: fila de jogos e critérios para iniciar o próximo projeto.
+- `projects/FRUTODROMO_STATUS.md`: estado atual e próximos passos do Frutódromo.
+- `projects/FRUTODROMO.md`: contexto e histórico do projeto.
+- `projects/NEXT_GAME_EXPLORATION.md`: exploração do próximo jogo; ainda sem conceito aprovado.

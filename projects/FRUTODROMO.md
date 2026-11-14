@@ -1,6 +1,6 @@
 # Frutódromo — contexto compartilhado e roadmap para Claude / ChatGPT
 
-Atualizado: 2026-11-13. Repositório do jogo: https://github.com/Mendesoz/frutodromo
+Atualizado: 2026-11-14. Estado de retomada atual: [FRUTODROMO_STATUS.md](FRUTODROMO_STATUS.md). Os registros abaixo preservam a evolução histórica. Repositório do jogo: https://github.com/Mendesoz/frutodromo
 
 ## Regras de colaboração
 - Este arquivo documenta o estado do projeto; não autoriza alterações indiscriminadas.
@@ -38,6 +38,40 @@ Atualizado: 2026-11-13. Repositório do jogo: https://github.com/Mendesoz/frutod
 4. Registrar evidências dos testes, bugs e correções, com commits e arquivos; não marcar como concluído sem teste.
 5. Preparar auditoria histórica de todas as etapas do projeto. As etapas anteriores à 6B ainda exigem levantamento de commits, não inventar histórico.
 6. Não alterar a branch principal do jogo sem aprovação. O usuário quer um link único de testes, sem configuração manual repetida.
+
+## Atualização Claude — 14/11/2026 (interface, tutorial, visual e QA)
+Branch: `qa-claude-frutodromo` (base `stage9-dynamic-difficulty`), PR https://github.com/Mendesoz/frutodromo/pull/24. Não houve merge na `main` nem publicação feita pelo Claude.
+
+**Decisões do Eric (14/11):** jogo de navegador; celular em pé. A paisagem só no contexto do CrazyGames. iPhone e PWA offline depois do lançamento. A divisão de tarefas para reenviar ao CrazyGames está aprovada em `TAREFAS_CRAZYGAMES.md` (na branch). Balanceamento, integração e publicação continuam com o Eric.
+
+**Feito pelo Claude, com testes reais no Chromium e no WebKitGTK** (o iPhone só conta pelo relato do Eric):
+| Commit | Item |
+|---|---|
+| `fe9a9f0` | SW registra em qualquer https (antes só em github.io); cache v44, depois v45 |
+| `c990b92` | Área de toque de 40 px em telas largas de toque |
+| `1a616bf` | Inglês: feira sem palavras partidas |
+| `667a801` | Bug M-08: segunda entrega ao mesmo cliente pagava de novo (corrigido em memória, sem mudar o save) |
+| `ca778fd` | Inglês: textos do modo dica |
+| `10f43b7` | Sombras borradas das etapas 7/8 trocadas por degraus de pixel; volume medido (consistente, mas o jogo todo é baixo: pico −22,5 dBFS) |
+| `9e67175` | Tutorial: PULAR TUTORIAL e mãozinha animada mostrando o gesto de arrastar (passos 1 e 2) |
+| `d89f8e5` | M-02 a M-08 executados no navegador: receitas 100% reproduzidas, entrega real 125/125, 0 impossíveis em 80 mil, saves antigos ok |
+
+Evidências: `QA_CLAUDE.md`, `docs/qa/2026-11-13/`, `docs/qa/2026-11-14/` e os scripts em `tools/qa/` (na branch).
+
+**iPhone real (Eric, 14/11):** abertura, arraste e entrega, entrega errada e dica, fechar e reabrir, e visual sem o véu lilás: PASS. Zoom de toque duplo, segundo plano, desempenho de 10 min e PWA offline na v44 ficam para depois do lançamento.
+
+**Para o Eric decidir (Codex implementa se aprovado):**
+- LOG-01: do nível 5 em diante não há pedido de profundidade 2.
+- LOG-02: o VIP não pede receita mais funda.
+- LOG-03: um acerto depois de um erro zera o `streak`.
+- LOG-06: nos níveis 3–6 com `streak` negativo o peso difícil fica negativo e o médio cai.
+- LOG-04: o `DIFF` é por aparelho.
+- Áudio: decidir se sobe o volume geral.
+
+**Produção (verificado em 14/11, 08h40):** `frutodromo.pages.dev` serve SW v44 com a etapa 9, mas sem as correções de 14/11. Ela **não** está mais na etapa 7. Conferir no Cloudflare qual branch está publicada.
+
+**Próximos passos do Claude:** tarefa 7, capas e vídeo novos para o CrazyGames. Depois da integração feita pelo Codex, tarefa 9: regressão final e zip do portal.
+**Próximos passos do Codex:** tarefas 2 (texto da página), 3 (LOGs com o Eric) e 8 (rebase, integração).
 
 ## Ponto de recuperação
 `checkpoint-stage8-visual` preserva a versão visual anterior à correção funcional de receitas.

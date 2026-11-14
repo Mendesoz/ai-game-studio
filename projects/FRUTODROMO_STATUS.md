@@ -1,5 +1,51 @@
 # Frutódromo — status e retomada para agentes
 
+Verificação: 14/11/2026, consulta ao GitHub pelo Codex.
+Prioridade do Eric: fechar o Frutódromo para o CrazyGames e preparar a fila do estúdio.
+Fila: [QUEUE.md](QUEUE.md).
+
+## Estado observado
+- Claude: `qa-claude-frutodromo` em `d70b3550b1df93e5956caa7dfa4354d6eece2819`; [PR #24](https://github.com/Mendesoz/frutodromo/pull/24) para `stage9-dynamic-difficulty`.
+- Codex: `qa-chatgpt-logic` em `3152724d6d56c51328c4517a72a51ba40b12ebde`, sincronizada anteriormente com `d89f8e5`; incorporar atualizações seguintes do Claude antes de consolidar.
+- `main` do jogo em `5cf0d73`; Stage 9 em `9cf9575`. Não houve merge nem nova publicação feitos pelo Codex nesta verificação.
+- A prévia do Claude foi publicada automaticamente em https://qa-claude-frutodromo.frutodromo.pages.dev/ conforme comentário do bot no PR. Isso não identifica a branch de produção do domínio principal.
+
+## Claude: concluído conforme relatório e commits
+- Correção de entrega duplicada, traduções e suporte ao SW fora de github.io.
+- `10f43b7`: sombras em degraus de pixel e medição de áudio; volume geral baixo, mantido sem ajuste automático.
+- `9e67175`: Pular tutorial e mãozinha animada; cache v45. O relatório registra testes de tutorial, movimento reduzido, idioma e regressão sem erros no Chromium.
+- Capas e vídeo novos: próximos itens informados pelo Claude; não considerar concluídos até aparecerem evidências.
+- [Tarefas e responsáveis](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/TAREFAS_CRAZYGAMES.md), [QA](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/QA_CLAUDE.md) e [handoff](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/QA_HANDOFF_CHATGPT_2026-11-14.md).
+- Codex está aplicando ao centralizador o conteúdo documental do [patch do Claude](https://github.com/Mendesoz/frutodromo/tree/qa-claude-frutodromo/docs/studio-sync), preservando as instruções de execução em segundo plano. A sessão atual do Claude relatou não ter push neste centralizador.
+
+## Decisão de balanceamento aprovada pelo Eric em 14/11
+Corrigir apenas LOG-06: impedir peso negativo em `diffTier()`, mantendo a proporção dos pedidos médios quando a transferência fácil/difícil atingir o limite disponível. Implementação e testes ainda pendentes no momento deste registro.
+Manter nesta versão LOG-01 (progressão/profundidades), LOG-02 (VIP), LOG-03 (erro e acerto como eventos) e LOG-04 (DIFF por aparelho). Não migrar saves.
+
+## Itens para o reenvio
+| Item | Dono | Estado nesta verificação |
+|---|---|---|
+| Texto da página em português e inglês | Codex | Revisar para dicas, VIP, adaptação e escopo de orientação |
+| Correção aprovada LOG-06 e regressão de lógica | Codex | Próxima ação |
+| Capas e vídeo atuais | Claude + Eric aprova | Em andamento conforme Claude |
+| Candidata integrada com SHAs fixados | Codex + revisão Claude | Pendente; nenhuma autorização de merge presumida |
+| Regressão final, zip e QA Tool do portal | Claude + Eric | Pendente após candidata |
+| Aprovação do material e do envio/publicação | Eric | Pendente |
+
+Tentar preparar o reenvio hoje é uma meta de trabalho, não uma garantia. O CrazyGames [revê as submissões](https://docs.crazygames.com/) e separa Basic Launch e Full Launch; o [Basic Launch](https://docs.crazygames.com/resources/basic-launch-metrics/) tem avaliação de 7 a 21 dias.
+
+No telefone a prioridade é retrato. Paisagem é relevante na janela desktop do portal. Testes extras de iPhone/PWA ficam para depois do marco CrazyGames, conforme escopo registrado pelo Claude e confirmado com as prioridades do Eric.
+
+## Como retomar
+1. Consultar o HEAD remoto e os comentários mais recentes do PR #24.
+2. Conferir a divisão de arquivos antes de editar; Claude mantém CSS, tutorial, SW e `tools/qa/`.
+3. Trabalhar em segundo plano, sem operar a interface do computador.
+4. Registrar decisões, commits e testes efetivamente executados. Não promover a `main` ou enviar ao portal sem a aprovação correspondente.
+
+## Histórico preservado — inspeção de 13/11/2026
+O texto abaixo é histórico e não representa as pendências atuais. Em conflito, usar a verificação de 14/11 acima e os documentos recentes.
+
+
 **Verificação:** 2026-11-13 (consulta ao GitHub).  
 **Origem:** [Mendesoz/frutodromo](https://github.com/Mendesoz/frutodromo), branch `main`.  
 **Último commit observado:** [`5cf0d73`](https://github.com/Mendesoz/frutodromo/commit/5cf0d731dca34d5c631ec1ca3a2493d0738e5c26) — personagens com corpo, roupas, cinco expressões e respiração.  
