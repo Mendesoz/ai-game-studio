@@ -4,7 +4,18 @@ Verificação: 14/11/2026, consulta ao GitHub pelo Codex.
 Prioridade do Eric: fechar o Frutódromo para o CrazyGames e preparar a fila do estúdio.
 Fila: [QUEUE.md](QUEUE.md).
 
-## Estado observado
+## Fechamento verificado — 14/11/2026, após o QA final
+- Claude concluiu a tarefa 9 com PASS sobre `4c6608de42cf9dd76e635d487d727ede9fb017f9`. [Relatório completo](https://github.com/Mendesoz/frutodromo/blob/qa-claude-release/QA_RELEASE_CLAUDE_2026-11-14.md), branch `qa-claude-release` em `82e8409`; o código do jogo não mudou.
+- PRs [#24](https://github.com/Mendesoz/frutodromo/pull/24) e [#25](https://github.com/Mendesoz/frutodromo/pull/25) integrados na Stage 9 após a aprovação do Eric e o QA final. HEAD: `eb216fbf56e423cc986daaca7e81a8a2fa4ca52e`. Codex conferiu com Git que sua árvore é idêntica à candidata testada.
+- `main` continua em `5cf0d731dca34d5c631ec1ca3a2493d0738e5c26`; não foi promovida por esta integração.
+- Pacote: [frutodromo-crazygames-4c6608d.zip](https://github.com/Mendesoz/frutodromo/blob/qa-claude-release/release/frutodromo-crazygames-4c6608d.zip), 129.678 bytes, somente `index.html`.
+- Codex extraiu o arquivo binário do Git e conferiu SHA-256: `3a248e560081253c7798e243c6410973b6dfacbd21f01b43eefbca102a97be0e`. Materiais aprovados e texto reunidos para entrega ao Eric.
+- Ainda não houve submissão ao CrazyGames nem validação na QA Tool real do painel. Essa validação não é substituída pelos testes locais com SDK simulado.
+- Na eventual promoção do site/PWA, cumprir a regra do repositório de aumentar a versão do cache; o zip do portal não usa SW.
+
+Os registros abaixo preservam as etapas anteriores; esta atualização tem precedência para o estado atual.
+
+## Estado observado anteriormente
 - Claude: `qa-claude-frutodromo` em `0170b41626c9db2de82eeea920d73bdc6ae2752a`; [PR #24](https://github.com/Mendesoz/frutodromo/pull/24) para `stage9-dynamic-difficulty`.
 - Codex: `qa-chatgpt-logic` em `3152724d6d56c51328c4517a72a51ba40b12ebde`, sincronizada anteriormente com `d89f8e5`; incorporar atualizações seguintes do Claude antes de consolidar.
 - `main` do jogo em `5cf0d73`; Stage 9 em `9cf9575`. Não houve merge nem nova publicação feitos pelo Codex nesta verificação.

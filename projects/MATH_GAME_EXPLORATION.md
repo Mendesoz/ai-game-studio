@@ -27,6 +27,11 @@ Usar esses exemplos para identificar padrões rejeitados, sem generalizar a aná
 - Tratamento infantil por padrão para um projeto ligado a estudantes de ensino médio.
 - Contagem de pontos ou rapidez de cálculo como única evidência de compreensão.
 
+## Unidade de design esclarecida pelo Eric
+O ponto de partida é uma questão concreta fornecida pelo Eric. A partir dela, identificar situação, dados, restrições, relações e incógnita; transformar esses elementos em ações, regras, feedback e objetivo de jogo. O gênero e a ambientação são escolhidos depois dessa análise, em vez de obrigar todas as questões a caber num jogo previamente definido.
+
+Primeiro caso fornecido: [FUVEST 2013, primeira fase, questão 23 — Eratóstenes](MATH_CASE_FUVEST_2013_Q23.md). A demonstração é exploração de mecânica, sem produção de jogo completo aprovada.
+
 ## Hipótese de design do Codex — para discutir
 O enunciado vira uma situação do mundo; as relações matemáticas viram suas regras. O jogador observa, planeja, manipula, executa e vê o resultado. Números, gráficos e textos curtos podem fazer parte das ferramentas e pistas do mundo.
 

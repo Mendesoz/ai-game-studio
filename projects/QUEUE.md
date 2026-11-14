@@ -5,8 +5,8 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 ## Fila atual
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
-| 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Fechamento para reenvio ao CrazyGames; ainda não submetido nesta rodada | Candidata e materiais aprovados; Claude executando QA final no PR #25; concluir pacote e envio | Codex: lógica/texto/integração; Claude: visual/materiais/QA; Eric: aprova e envia |
-| 2 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Transformar uma situação matemática em uma mecânica e validar o recorte; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
+| 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Fechamento para reenvio ao CrazyGames; ainda não submetido nesta rodada | QA final PASS; PRs #24/#25 integrados em Stage 9; pacote conferido; executar QA Tool do painel e reenviar | Codex: lógica/texto/integração; Claude: visual/materiais/QA; Eric: aprova e envia |
+| 2 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 3 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
 
 ## Como avançar
