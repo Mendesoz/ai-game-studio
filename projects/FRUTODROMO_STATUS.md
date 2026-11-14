@@ -14,7 +14,7 @@ Fila: [QUEUE.md](QUEUE.md).
 - Correção de entrega duplicada, traduções e suporte ao SW fora de github.io.
 - `10f43b7`: sombras em degraus de pixel e medição de áudio; volume geral baixo, mantido sem ajuste automático.
 - `9e67175`: Pular tutorial e mãozinha animada; cache v45. O relatório registra testes de tutorial, movimento reduzido, idioma e regressão sem erros no Chromium.
-- `f314d30`: capas e vídeos novos gerados com os sprites atuais: capas 1920×1080, 800×1200 e 800×800, vídeo paisagem de 20 s e retrato de 18 s, sem som. Conforme Claude, gravação sem erros; materiais aguardam aprovação do Eric. Scripts em `tools/marketing/`. Atualização do patch 14b incorporada pelo Codex.
+- `f314d30`: capas e vídeos novos gerados com os sprites atuais: capas 1920×1080, 800×1200 e 800×800, vídeo paisagem de 20 s e retrato de 18 s, sem som. Conforme Claude, gravação sem erros; materiais aprovados pelo Eric em 14/11. Scripts em `tools/marketing/`. Atualização do patch 14b incorporada pelo Codex.
 - [Tarefas e responsáveis](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/TAREFAS_CRAZYGAMES.md), [QA](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/QA_CLAUDE.md) e [handoff](https://github.com/Mendesoz/frutodromo/blob/qa-claude-frutodromo/QA_HANDOFF_CHATGPT_2026-11-14.md).
 - Codex está aplicando ao centralizador o conteúdo documental do [patch do Claude](https://github.com/Mendesoz/frutodromo/tree/qa-claude-frutodromo/docs/studio-sync), preservando as instruções de execução em segundo plano. A sessão atual do Claude relatou não ter push neste centralizador.
 
@@ -27,10 +27,10 @@ Manter nesta versão LOG-01 (progressão/profundidades), LOG-02 (VIP), LOG-03 (e
 |---|---|---|
 | Texto da página em português e inglês | Codex | Concluído em `4a0e50a`; aguarda candidata final do portal |
 | Correção aprovada LOG-06 e regressão de lógica | Codex | Concluído em `cd869d1`; 7/7 testes e checagem de navegador aprovados |
-| Capas e vídeo atuais | Claude + Eric aprova | Gerados em `f314d30`; aguardam aprovação do Eric |
+| Capas e vídeo atuais | Claude + Eric | Gerados em `f314d30`; aprovados pelo Eric em 14/11 |
 | Candidata integrada com SHAs fixados | Codex + revisão Claude | Disponível no PR #25, SHA `4c6608de42cf9dd76e635d487d727ede9fb017f9`; sem promoção de main/stage9 |
-| Regressão final, zip e QA Tool do portal | Claude + Eric | Candidata entregue à sessão em andamento por CLI (envio confirmado); início e resultado final ainda aguardam evidência no GitHub |
-| Aprovação do material e do envio/publicação | Eric | Pendente |
+| Regressão final, zip e QA Tool do portal | Claude + Eric | Claude confirmou início no PR #25 às 09h56 BRT; relatório final pendente |
+| Aprovação da candidata, materiais e avanço para envio | Eric | Recebida em 14/11 (“Tá aprovado”); QA final continua como condição antes de publicar |
 
 Tentar preparar o reenvio hoje é uma meta de trabalho, não uma garantia. O CrazyGames [revê as submissões](https://docs.crazygames.com/) e separa Basic Launch e Full Launch; o [Basic Launch](https://docs.crazygames.com/resources/basic-launch-metrics/) tem avaliação de 7 a 21 dias.
 
@@ -44,6 +44,11 @@ No telefone a prioridade é retrato. Paisagem é relevante na janela desktop do 
 - Relatório: [QA_RELEASE_CODEX_2026-11-14.md](https://github.com/Mendesoz/frutodromo/blob/codex/crazygames-final-logic/QA_RELEASE_CODEX_2026-11-14.md).
 - Claude pode executar a regressão e gerar o pacote dessa branch sem esperar uma promoção de `main` ou `stage9`. Qualquer nova atualização da candidata requer registrar novo SHA e validar a mudança.
 - CSS, tutorial, `sw.js` e scripts de QA do Claude foram preservados. Coordenar cache na promoção final do site/PWA; isso não impede o build separado do portal.
+
+## Aprovação e execução da tarefa 9 — 14/11/2026
+Eric respondeu “Tá aprovado” à apresentação da candidata, materiais e avanço para o envio. A aprovação foi comunicada pelo Codex à sessão do Claude pelo terminal e confirmada no PR #25. O QA final permanece obrigatório antes de qualquer publicação.
+
+[Atualização do Claude no PR #25](https://github.com/Mendesoz/frutodromo/pull/25), às 09h56 BRT: iniciou sobre `4c6608d`, em checkout destacado, sem alterar código. Relatou aprovação em sintaxe, 7/7 testes de dificuldade, fluxo inicial, regressão em seis tamanhos, tutorial, tradução, M-08, dicas/VIP, toque/responsividade, saves antigos, receitas, LOG-06 em navegador, PWA offline 3/3, WebKit e build do portal com/sem SDK. Restavam WebKit com entrega, desempenho e sessão longa. Estes são resultados relatados pelo Claude; o Codex ainda não conferiu o relatório final nem o zip final.
 
 ## Como retomar
 1. Consultar o HEAD remoto e os comentários mais recentes do PR #24.

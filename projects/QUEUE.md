@@ -5,8 +5,8 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 ## Fila atual
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
-| 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Fechamento para reenvio ao CrazyGames; ainda não submetido nesta rodada | LOG-06 e página concluídos; candidata no PR #25; concluir QA do portal e aprovar materiais/pacote | Codex: lógica/texto/integração; Claude: visual/materiais/QA; Eric: aprova e envia |
-| 2 | [Próximo jogo: perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração; conceito e produção ainda não aprovados | Comparar referências do Eric e definir um ciclo mínimo de jogo e uma prova pequena de multiplayer | Codex + Claude no escopo; Eric decide o conceito |
+| 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Fechamento para reenvio ao CrazyGames; ainda não submetido nesta rodada | Candidata e materiais aprovados; Claude executando QA final no PR #25; concluir pacote e envio | Codex: lógica/texto/integração; Claude: visual/materiais/QA; Eric: aprova e envia |
+| 2 | Próximo projeto do Eric ([exploração anterior](NEXT_GAME_EXPLORATION.md)) | Eric informou que já tem a próxima ideia; descrição ainda não recebida | Ouvir a ideia e as referências antes de fechar conceito ou tecnologia | Codex + Claude no escopo; Eric decide o conceito |
 | 3 | Outras ideias do Eric | Espaço reservado, sem projetos inventados | Acrescentar referências e avaliar propostas antes de ordenar | Eric + agentes |
 
 ## Como avançar
