@@ -2,6 +2,7 @@
 
 - Consulte e mantenha este repositório como centralizador permanente de todos os jogos, tanto no Codex quanto no Claude. Leia o contexto antes de iniciar ou retomar uma tarefa.
 - Ao concluir uma tarefa significativa ou registrar uma decisão aprovada, atualize a ficha do jogo e os links de evidências; não dependa de repasse manual entre chats.
+- Coordene Codex e Claude em segundo plano, por terminal e processos sem janela, para que o Eric continue usando o computador. Não opere a interface do desktop para coordenar agentes; uma interação visual exige pedido explícito do Eric.
 - Siga `docs/COORDINATION.md` para responsabilidades, atualizações e handoffs.
 - Registre decisões e evidências; diferencie hipóteses, testes reais e métricas observadas.
 - O proprietário aprova conceito, arte, áudio e publicação.

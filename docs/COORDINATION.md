@@ -38,3 +38,10 @@ Referências: [ficha do projeto](../projects/FRUTODROMO.md), [plano de conclusã
 
 ## Comunicação entre agentes
 O registro no GitHub é persistente, mas não injeta mensagens automaticamente em conversas já abertas. Ao transmitir uma atualização, indicar o documento e o commit. Diferenciar mensagem preparada, mensagem enviada e confirmação recebida. Não afirmar que a ponte entre chats está ativa sem testar.
+
+## Trabalho em segundo plano
+Preferência operacional do Eric, 14/11/2026: enviar as tarefas em um único chat e continuar usando o computador normalmente. A coordenação deve usar chamadas programáticas ao Claude Code e ao Codex, em processos sem janela e sem capturar mouse, teclado ou foco. Operar a interface do desktop para coordenar agentes exige um pedido explícito do Eric.
+
+As chamadas do Claude Code usam sessões dedicadas, com o contexto do centralizador e tarefas delimitadas. Elas não recebem automaticamente o histórico nem enviam mensagens à conversa que já está aberta no aplicativo. Não confundir a sessão dedicada com a frente visual que já está em andamento; conferir responsáveis e branches antes de iniciar implementação.
+
+**Validação realizada em 14/11/2026 pelo Codex:** uma chamada programática ao Claude Code, limitada à leitura, consultou `AGENTS.md`, `CLAUDE.md` e `docs/COORDINATION.md` e devolveu uma confirmação em português diretamente ao processo chamador. Resultado: sucesso, sem recusas de permissão; diretório de trabalho permaneceu limpo. O teste não abriu janelas nem enviou mensagens à conversa antiga. Isto valida uma troca pelo terminal; não representa um serviço permanente de fila nem sincronização dos históricos dos aplicativos.
