@@ -1,5 +1,17 @@
 # Brotalume — fazenda idle (nome de trabalho proposto)
 
+## Base online autorizada e validada — 15/11/2026
+Esta seção prevalece sobre os registros históricos abaixo.
+- Eric autorizou seguir a base proposta pelo Codex, construir banco/backend, incluir Claude e automatizar verificações para buscar um alpha fechado até **30/11/2026**. Meta de desenvolvimento, sem promessa de publicação comercial.
+- [PR #30](https://github.com/Mendesoz/frutodromo/pull/30), branch `codex/fazenda-online-base`, derivada da integração visual bce3379. Código validado: `4234e4d968db5ec723973e9ceea9baa1aae5d466`; documentação final:e9a180d. Main, jogo publicado e saves locais preservados.
+- Implementado em server/: Node/TypeScript, PostgreSQL, contas/sessões, inventário/razões, filas por tempo do banco, milho→ração→ovo→pedido NPC, compra/resgate limitado de semente e compra de terreno adjacente. PGlite persistente somente para desenvolvimento local; backend público não contratado/configurado.
+- **18 testes PASS local e em PostgreSQL17 real**, com duas pools/instâncias,50comandos concorrentes,30replays da mesma chave e capacidade concorrente. Build, auditoria das dependências e sintaxe PASS na [CI43709893238](https://github.com/Mendesoz/frutodromo/actions/runs/43709893238).
+- Claude Code autenticou com sucesso após login na extensão e respondeu a duas chamadas dedicadas somente leitura: [parecer da proposta](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/CLAUDE_BASE_ONLINE_2026-11-15.md) e [revisão do código](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/CLAUDE_REVISAO_CODIGO_2026-11-15.md). Aprovou para teste local fechado; não executou testes. Codex aplicou achados pertinentes e ampliou a cobertura.
+- Smoke HTTP real: duas contas distintas, fazendas separadas e comando repetido com um único plantio. Servidor compilado local reiniciado com correções e migração002; health200. Nenhuma nova UI/teste de navegador nesta rodada. A prévia visual ainda **não usa esta API**; não anunciar multiplayer jogável.
+- [Plano vigente](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/PLANO_NOVEMBRO.md), [QA](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/QA_BASE_ONLINE_2026-11-15.md), [fila com critérios](https://github.com/Mendesoz/frutodromo/issues/31). Próximo: mapa contínuo + cliente online até22/11; depois negociação virtual entre duas contas, automação limitada e candidata de teste fechado.
+- Automação real: CI em cada envio relevante; `npm run review:claude` chama revisor Read/Glob/Grep sem janela, resultado privado. Não há serviço permanente de desenvolvimento ou sincronização da conversa antiga. Implementação ocorre em sessões ativas, sem Eric transportar contexto.
+- Preservar arte original, navegador e celular em pé. Ligas/barcos/pagamentos/saques fora do alpha. Nome Brotalume continua proposto.
+
 ## Estado mais recente — 15/11/2026: Brotalume (nome proposto)
 Esta seção prevalece sobre o planejamento histórico abaixo.
 - Eric determinou usar **Hay Day como referência de gameplay**, mantendo a essência, pixel art e sprites do Frutódromo. Fazenda personalizável, disposição de canteiros/instalações e cadeias produtivas orientam o próximo recorte. Não copiar visual ou ativos do Hay Day.

@@ -6,7 +6,7 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
 | 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Site publicado; rascunho CrazyGames criado, envio manual com Eric | Eric conclui QA/formulário e informa o resultado; prévia falhou antes de carregar o jogo no navegador do Codex | Codex: integração/publicação/pacote concluídos; Claude: QA local concluído; Eric: envio manual |
-| 2 | [Brotalume — nome proposto](FRUTODROMO_ONLINE_EXPLORATION.md) | Fazenda idle: protótipo do Claude integrado ao visual do Codex no PR #29; prévia disponível | Gameplay de Hay Day como referência, identidade original; definir colocação de construções e cadeia produtiva pequena | Codex: apresentação; revisão de gameplay/economia solicitada ao Claude, aguardando resposta |
+| 2 | [Brotalume — nome proposto](FRUTODROMO_ONLINE_EXPLORATION.md) | Produção autorizada; base banco/API validada no PR #30,18testes verdes e duas revisões Claude concluídas | Meta alpha30/11: próximo mapa contínuo + cliente online, depois comércio virtual; plano/issue#31 na ficha | Codex: implementação/integração; Claude: revisão independente/QA delimitado |
 | 3 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 4 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
 
@@ -30,3 +30,5 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 - 15/11/2026, conferência Codex: oito commits do Claude no PR #27; mudança registrada para fazenda idle, sem genética. Atualização da ficha distingue decisões relatadas, propostas, simulação e artifacts privados. Nenhuma implementação nova da fazenda identificada no diff do repositório.
 
 - 15/11/2026, Eric: referência é gameplay de Hay Day, com nossa identidade/sprites, fazenda personalizada e sem caldeirão. Pediu novo nome; proposta do Codex: Brotalume. PR #29 reúne as duas frentes; comunicação direta por CLI falhou por autenticação expirada e o alinhamento foi publicado no PR, sem resposta confirmada.
+
+- 15/11/2026, Eric: autorizou seguir a base recomendada, construir banco/backend e incluir Claude para acelerar, buscando algo concreto até30/11. Plano no PR#30/issue#31; datas são metas. Não autoriza pagamentos/saques ou publicação comercial. Base técnica validada; cliente conectado/comércio são próximos marcos.

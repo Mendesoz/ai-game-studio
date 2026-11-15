@@ -60,3 +60,9 @@ A mensagem entregou o PR #25 e o SHA `4c6608d` para a tarefa 9 já prevista (reg
 - Nesta rodada Codex fez cenário/apresentação; solicitou ao Claude revisão de gameplay/economia no comentário do PR. Confirmação de aceite ainda pendente; não presumir uma resposta.
 - Antes de editar a mesma área, combinar tarefa e arquivos no PR; antes de push, conferir HEAD remoto. Se a base avançar, integrar preservando ambas as contribuições, sem reescrever histórico compartilhado ou descartar o outro trabalho.
 - Há registro durável compartilhado, não sincronização automática de conversas antigas. Distinguir mensagem publicada, entrega direta e resposta. Em 15/11, a chamada direta pelo Claude Code local falhou por autenticação expirada; o comentário no PR foi publicado, mas isso não é prova de leitura.
+
+## Continuidade da fazenda até 30/11 — atualização de 15/11/2026
+- Implementação e colaboração ampliada autorizadas. Fonte atual: [PR #30](https://github.com/Mendesoz/frutodromo/pull/30), [PLANO_NOVEMBRO.md](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/PLANO_NOVEMBRO.md) e [issue #31](https://github.com/Mendesoz/frutodromo/issues/31).
+- Codex implementou banco/API/testes; Claude realmente respondeu a duas tarefas de proposta e código, sem editar. Achados integrados;18testes local/PostgreSQL17, build/auditoria/sintaxe PASS no CI43709893238, código4234e4d. Documentação final:e9a180d.
+- Autenticação anterior resolvida; não há ponte com o chat antigo da extensão. Próxima divisão: Codex mapa/cliente/API; Claude revisão de fluxo/QA em tarefas/arquivos combinados. Não presumir que a sessão antiga esteja implementando a mesma área.
+- Frontend ainda não conectado; sem mercado/finanças. CI e revisão sob comando automatizados; não há desenvolvimento permanente/agendado. Atualizar a ficha antes de retomar e conferir responsáveis/HEAD sem reescrever histórico compartilhado.
