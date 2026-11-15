@@ -53,3 +53,10 @@ As chamadas do Claude Code usam sessões dedicadas, com o contexto do centraliza
 Além do teste com uma sessão local dedicada, o Codex enviou uma mensagem de coordenação à sessão em nuvem do Claude vinculada aos commits do Frutódromo, usando o comando oficial `claude -p --cloud <session-id> --output-format json`. A resposta confirmou `ok: true`. Nenhuma interface do computador foi operada.
 
 A mensagem entregou o PR #25 e o SHA `4c6608d` para a tarefa 9 já prevista (regressão final e zip), preservando a exigência de aprovação para merge/publicação. A confirmação de entrega não prova leitura, início ou conclusão do trabalho; acompanhar evidências no GitHub. O envio é explícito para uma sessão identificada, não uma sincronização automática de todos os chats.
+
+## Frente de fazenda — alinhamento atual de 15/11/2026
+- Referência principal de integração: [PR #29](https://github.com/Mendesoz/frutodromo/pull/29), branch `codex/fazenda-visual`, sobre o protótipo do Claude. Ler [DIRECAO_ATUAL.md](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-visual/docs/online/DIRECAO_ATUAL.md) e a ficha antes de iniciar trabalho.
+- Eric pediu referência de gameplay Hay Day com identidade original, fazenda personalizável e sem caldeirão. Brotalume é nome de trabalho proposto.
+- Nesta rodada Codex fez cenário/apresentação; solicitou ao Claude revisão de gameplay/economia no comentário do PR. Confirmação de aceite ainda pendente; não presumir uma resposta.
+- Antes de editar a mesma área, combinar tarefa e arquivos no PR; antes de push, conferir HEAD remoto. Se a base avançar, integrar preservando ambas as contribuições, sem reescrever histórico compartilhado ou descartar o outro trabalho.
+- Há registro durável compartilhado, não sincronização automática de conversas antigas. Distinguir mensagem publicada, entrega direta e resposta. Em 15/11, a chamada direta pelo Claude Code local falhou por autenticação expirada; o comentário no PR foi publicado, mas isso não é prova de leitura.

@@ -1,4 +1,24 @@
-# Frutódromo online — exploração de conceito
+# Brotalume — fazenda idle (nome de trabalho proposto)
+
+## Estado mais recente — 15/11/2026: Brotalume (nome proposto)
+Esta seção prevalece sobre o planejamento histórico abaixo.
+- Eric determinou usar **Hay Day como referência de gameplay**, mantendo a essência, pixel art e sprites do Frutódromo. Fazenda personalizável, disposição de canteiros/instalações e cadeias produtivas orientam o próximo recorte. Não copiar visual ou ativos do Hay Day.
+- Eric confirmou que o caldeirão não faz sentido nesta fazenda e pediu um novo nome. Codex propôs **Brotalume**, ainda como nome de trabalho; não há confirmação de marca/domínio ou escolha definitiva.
+- Claude entregou protótipo executável em `c7a5903`, depois seletor de personagens, frutas/clientes originais e save v2 em `d4e4e45`, branch `claude/fazenda-prototipo`. Isso atualiza a inspeção anterior, que só tinha documentos/simulação.
+- Codex preparou `codex/fazenda-visual` e integrou a revisão mais recente do Claude, preservando as duas contribuições. HEAD: `bce33792b6090432d1f3f96c6d1889d917be8781`.
+- [PR #29](https://github.com/Mendesoz/frutodromo/pull/29), draft contra `claude/fazenda-prototipo`; GitHub indicou integração limpa na conferência. Nenhum merge na main.
+- [Prévia da fazenda](https://codex-fazenda-visual.frutodromo.pages.dev/prototipo-fazenda/). Cloudflare informou deploy de `bce3379` concluído; Codex confirmou HTTP 200 do HTML, CSS e módulo de arte, nome BROTALUME, save v2 e ausência de caldeirão na interface.
+- Reuso efetivo: molduras, fonte, personagens e decoração originais. Exterior novo com celeiro, quitanda, cercas, vegetação e animais com volume. Caldeirão removido da eclosão, agora chocadeira/ninho.
+- [Direção/coordenação](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-visual/docs/online/DIRECAO_ATUAL.md) e [QA com limites](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-visual/docs/online/QA_FAZENDA_VISUAL_2026-11-15.md).
+- Primeira passagem: entrada, produção, venda, compra de animal, boost, AFK e recarga; quatro tamanhos sem rolagem horizontal ou erros JS. Após integrar d4e4e45: entrada com personagem selecionado, recarga, ovo dourado colocado na chocadeira, compra de boost, entrega/agradecimento e venda reais na UI; console sem erros capturados.
+- Economia/RNG/estado/produção e offline/loop idênticos a d4e4e45; ações/compras idênticas após normalizar texto de eclosão. `fazenda_proto_v2` preservado. Save do Frutódromo publicado separado.
+- Ainda não existe edição livre da disposição, cadeias produtivas completas ou operação de mercado/pagamentos nesta entrega.
+
+### Comunicação e divisão nesta rodada
+- O Eric apontou visuais concorrentes. Codex publicou [alinhamento ao Claude no PR #29](https://github.com/Mendesoz/frutodromo/pull/29#issuecomment-6893110608): Codex na apresentação; Claude na revisão de gameplay/economia. A divisão foi proposta, sem confirmação de aceite recebida.
+- A tentativa de chamada adicional ao Claude Code local falhou por autenticação expirada. Não afirmar que essa chamada entregou a mensagem ou obteve resposta.
+- Nenhuma ponte automática com a conversa antiga do aplicativo foi estabelecida. Usar o PR e este centralizador como fonte persistente e conferir HEAD/áreas antes de editar.
+- Próximo marco: revisão conjunta do recorte Hay Day — posicionar/mover um canteiro e uma instalação, persistir layout e fechar um pequeno ciclo de produção/encomenda. É proposta ainda não implementada.
 
 Atualização: 15/11/2026. Estado atual: fazenda idle em planejamento, com documentação e molde visual do Claude; consultar a atualização abaixo. As seções de pomar/genética são históricas.
 Eric indicou https://pokeidle.io/app e perguntou se seria possível produzir algo semelhante com o Frutódromo, após destacar o mercado interno e três moedas da referência.
