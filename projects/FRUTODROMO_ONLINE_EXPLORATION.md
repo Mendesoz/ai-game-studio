@@ -1,7 +1,32 @@
 # Frutódromo online — exploração de conceito
 
-Data: 14/11/2026. Estado: preparação da frente e coordenação com Claude autorizadas; conceito detalhado e implementação ainda em definição.
+Atualização: 15/11/2026. Estado atual: fazenda idle em planejamento, com documentação e molde visual do Claude; consultar a atualização abaixo. As seções de pomar/genética são históricas.
 Eric indicou https://pokeidle.io/app e perguntou se seria possível produzir algo semelhante com o Frutódromo, após destacar o mercado interno e três moedas da referência.
+
+## Atualização conferida pelo Codex — 15/11/2026
+Esta seção prevalece sobre o conceito anterior de pomar/genética. Fonte: branch [claude/online-simulacao](https://github.com/Mendesoz/frutodromo/tree/claude/online-simulacao), HEAD `8fb050e3e0b56a2a4aeb2728702fed0417668849`, oito commits após `a26b439`; [PR #27](https://github.com/Mendesoz/frutodromo/pull/27), draft e ainda aberto. Nenhum merge realizado pelo Codex nesta conferência.
+
+### Direção do Eric registrada pelo Claude
+- Fazenda idle; genética e cruzamento de frutas saem do conceito.
+- Produção AFK com resumo do rendimento e cena animada.
+- Três moedas, com gemas de valor real no mercado entre jogadores; boosts temporários; achados e ferramentas com classificação.
+- Personalização de personagem e fazenda, nomes, decoração e proposta de fazenda exibível/visitável.
+- Rankings, passe e concurso/torneio; sem necessidade de boss, ginásio ou PvP.
+- Ranking de fazenda a cada três meses, com sorteio citado pelo Eric. Regras, prêmios, viabilidade e operação ainda não estão fechados.
+
+### Propostas do Claude, ainda distintas das decisões
+- Animais com raridade e atributos; vender um ovo dourado ou chocá-lo.
+- Desgaste de ferramentas, aposentadoria de animais e produtos perecíveis.
+- Modelos Vale/Serra/Litoral, Beleza, votos e recompensas cosméticas da temporada.
+- Gemas com entrada financiada por depósitos, circulação por vendas e saída por saques; cotação, taxas, pagamentos, requisitos e conciliação ainda precisam de definição. É desenho proposto, não operação validada ou autorização de integração financeira.
+- [Estrutura completa](https://github.com/Mendesoz/frutodromo/blob/claude/online-simulacao/docs/online/ESTRUTURA_REFERENCIA_2026-11-14.md).
+
+### O que existe e limites desta conferência
+- O diff contém documentos, duas imagens de referência e script Python de simulação da reprodução; nenhum código de execução da fazenda foi adicionado ao repositório nessa branch.
+- A simulação de linhagens virou estudo histórico de oferta/consumo após a retirada da genética. Não mede demanda real; Codex leu o código e o relatório, sem executar novamente o Python.
+- Claude registrou dois materiais visuais em artifacts privados. Codex tentou abrir o molde e encontrou exigência de login; seu conteúdo visual não foi inspecionado. Não confundir a prévia Cloudflare do PR (jogo existente) com implementação nova da fazenda.
+- O centralizador estava defasado em relação à branch do Claude. Esta atualização incorpora os fatos mais recentes e preserva abaixo o histórico.
+- Pedido visual do Eric continua: a prévia do Codex deve seguir a fazenda idle; o rascunho anterior de pomar com caldeirão não representa a direção atual.
 
 ## Referência e evidência
 - Codex leu a página pública do app e a apresentação https://pokeidle.io/; não entrou em conta nem testou transações ou saques.

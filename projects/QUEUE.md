@@ -6,7 +6,7 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
 | 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Site publicado; rascunho CrazyGames criado, envio manual com Eric | Eric conclui QA/formulário e informa o resultado; prévia falhou antes de carregar o jogo no navegador do Codex | Codex: integração/publicação/pacote concluídos; Claude: QA local concluído; Eric: envio manual |
-| 2 | [Frutódromo Online](FRUTODROMO_ONLINE_EXPLORATION.md) | Branch exclusiva publicada; revisão do Claude recebida, sem implementação | Definir primeira experiência proposta e estudar produção, mercado, divulgação e ganho de jogadores | Codex + Claude; Eric decide o conceito e a implementação |
+| 2 | [Frutódromo Online](FRUTODROMO_ONLINE_EXPLORATION.md) | Direção atual: fazenda idle; Claude detalhou estrutura em claude/online-simulacao, PR #27 | Alinhar visual à fazenda, consolidar decisões e definir recorte jogável; genética saiu do conceito | Codex + Claude; Eric decide o conceito e a implementação |
 | 3 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 4 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
 
@@ -26,3 +26,5 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 - 14/11/2026, Eric: próxima ideia é transformar situações matemáticas de ENEM/vestibulares em jogabilidade; rejeitou Coquinhos como referência e não quer formato de plataforma de exercícios. Gênero, tecnologia, modelo de venda e eficácia ainda não definidos.
 
 - 14/11/2026, Eric: autorizou branch separada e handoff ao Claude para explorar Frutódromo idle com mercado; destacou divulgação e oportunidade de ganho de jogadores. Branch criada: `codex/frutodromo-online`. Ainda não há aprovação de regras financeiras ou implementação do jogo completo.
+
+- 15/11/2026, conferência Codex: oito commits do Claude no PR #27; mudança registrada para fazenda idle, sem genética. Atualização da ficha distingue decisões relatadas, propostas, simulação e artifacts privados. Nenhuma implementação nova da fazenda identificada no diff do repositório.
