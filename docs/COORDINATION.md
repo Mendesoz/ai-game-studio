@@ -74,3 +74,8 @@ A mensagem entregou o PR #25 e o SHA `4c6608d` para a tarefa 9 já prevista (reg
 - Prévia local em http://127.0.0.1:8860/play/; não anunciar backend hospedado. Testes CI automáticos por envio; sem serviço permanente de desenvolvimento.
 
 - Reforço final do marco16/11: fazenda esperada validada no servidor antes de executar comando;29testes verdes no CI43850499270. A checagem cobre a troca de cookie em outra aba, além do descarte de pedidos na troca explícita de conta.
+
+## Fazenda — feira entregue em16/11/2026
+- Etapa3 concluída no PR30: lote reservado, compra/cancelamento atômicos e histórico. Códigoa0622d8, documentaçãof55d50f;44testes PostgreSQL17 verdes no CI43856745064 e UI em duas contas/quatro tamanhos. Ficha e QA acima são referência atual.
+- Claude implementou módulo/migração/testes; Codex integrou cliente/API e validou. Revisão final recebida e correções pertinentes aplicadas. Áreas liberadas; próxima etapa4, automação limitada. Piloto virtual resetável, sem integração financeira/main/publicação.
+- Claude cloud confirmou o alinhamento no handoff41ef83e: protótipoVIP/comissãoe65e26d separado da feira online. Isso é confirmação concreta dessa coordenação, não sincronização universal de históricos. Antes de implementação, reservar arquivos na branch oficial e ler plano/ficha.

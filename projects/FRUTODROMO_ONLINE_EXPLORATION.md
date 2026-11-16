@@ -1,5 +1,17 @@
 # Brotalume — fazenda idle (nome de trabalho proposto)
 
+## Feira online entre contas concluída — 16/11/2026
+Esta seção substitui o estado anterior de comércio pendente.
+- Etapa3 do plano até30/11 entregue no piloto: anunciar milho/ração/ovo, reservar lote e capacidade, comprar/cancelar atomicamente, consultar própria banca e histórico. Duas contas negociaram pela UI com moedas virtuais resetáveis, sem taxa ou dinheiro real.
+- [PR30](https://github.com/Mendesoz/frutodromo/pull/30), branch `codex/fazenda-online-base`. Implementação4f4b6cf, teste8aedd7c, correção finala0622d8d7f1973ff9b1a094ae91134050041ede7; documentaçãof55d50f419dd9a8e84a6d1410cba3673b92f1aba. Main intacta.
+- **44/44 testes PostgreSQL17 PASS**, [CI43856745064](https://github.com/Mendesoz/frutodromo/actions/runs/43856745064), build/auditoria/sintaxe verdes. Inclui dois compradores disputando um lote, compra contra cancelamento, compras recíprocas, conservação/replay, total forjado e resgate com lote reservado. Local:43testes da suíte inicial e caso adicional dirigido passaram.
+- Navegador: venda2milhos por4moedas; comprador80→76/4→6milhos, vendedor80→84/4→2. Recarga persistente. Segunda compra no celular por3moedas: comprador73/7milhos e vendedor87/1milho. Quatro viewports sem overflow lateral. [QA e capturas](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/QA_MERCADO_2026-11-16.md).
+- Claude implementou market.ts/migração004/13testes em arquivos reservados. Codex integrou helpers/API/cliente e executou QA. Revisão independente Claude sem bloqueadores; achado de erro escondido no diálogo corrigido e reproduzido com saldo gasto em outra aba:409 visível, botão bloqueado, saldo atualizado e sem débito/entrega parcial.
+- A frente cloud do Claude recebeu estado/PR/CI e confirmou a separação no handoff41ef83e. Seu protótipoe65e26d (VIP negociável/comissão10%) e documento303bbb6 são descoberta separada; não incorporados ao servidor. Conferir essas branches antes de novas decisões, sem reintroduzir caldeirão ou tratar gemas simuladas como moeda real.
+- **Prévia local:** http://127.0.0.1:8860/play/ . QA usou localhost/banco separado, depois encerrado. Sem backend público. Safari/iPhone físico, carga, backup/restauração e validação de jogadores ainda pendentes.
+- Multicontas/brindes transferíveis, resgate e vitrine limitada são riscos aceitos apenas neste piloto fechado resetável; bloqueiam economia pública. Preços continuam candidatos.
+- Próximo: etapa4, automação de reposição com ingrediente mínimo, ciclos/prazo finitos, reserva e equivalência online/offline. Áreas da etapa3 liberadas no roadmap. CI por push e Claude sob demanda; sem serviço permanente de desenvolvimento.
+
 ## Mapa e cliente online concluídos — 16/11/2026
 Esta seção substitui o estado anterior de API sem cliente.
 - Eric pediu continuar o desenvolvimento. Codex entregou cliente jogável com cadastro/login, mapa contínuo, expansão adjacente, produção/encomenda e layout/personagem salvos no servidor.
