@@ -38,3 +38,5 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 - 16/11/2026: etapa3 fechada antes do alvo23–26/11: negociação virtual na UI e44testes PostgreSQL verdes. Próximo etapa4. Claude confirmou handoff41ef83e; VIP/comissão do protótipo separado seguem na descoberta. Ver ficha atual para SHAs e evidências.
 
 - 16/11/2026: Eric separou visual/funcional e pediu WASD; referências visuais Stardew/Don't Starve/Sunflower. Cenário candidato e caminhada integrados, ainda sem aprovação estética. Onboarding e issues32–35 para Gabriuus preparados; read confirmado, atribuição recusada, nenhum convite enviado. Ver ficha para QA/CI/limites.
+
+- Gabriel conduzirá seu próprio Claude: issues33/35 são implementação de ajuda HTML/CSS e arte canvas isolada, com PR/revisão; não apenas tarefas manuais ou relatórios.
