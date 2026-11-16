@@ -66,3 +66,9 @@ A mensagem entregou o PR #25 e o SHA `4c6608d` para a tarefa 9 já prevista (reg
 - Codex implementou banco/API/testes; Claude realmente respondeu a duas tarefas de proposta e código, sem editar. Achados integrados;18testes local/PostgreSQL17, build/auditoria/sintaxe PASS no CI43709893238, código4234e4d. Documentação final:e9a180d.
 - Autenticação anterior resolvida; não há ponte com o chat antigo da extensão. Próxima divisão: Codex mapa/cliente/API; Claude revisão de fluxo/QA em tarefas/arquivos combinados. Não presumir que a sessão antiga esteja implementando a mesma área.
 - Frontend ainda não conectado; sem mercado/finanças. CI e revisão sob comando automatizados; não há desenvolvimento permanente/agendado. Atualizar a ficha antes de retomar e conferir responsáveis/HEAD sem reescrever histórico compartilhado.
+
+## Fazenda — marco de mapa fechado em16/11/2026
+- Cliente e mapa ligados ao servidor no PR#30, código23610f5 e documentação112bdf7.28testes e PostgreSQL real verdes, quatro telas e falhas/troca de conta testadas na UI; ver ficha/QA.
+- Codex fez cliente/estático/integração e QA; Claude implementou layout/migração/move/customize/testes em arquivos reservados e revisou a integração. Áreas desta rodada liberadas no roadmap do jogo.
+- Próxima área a reservar: mercado virtual (etapa3). Combinar módulo/arquivos antes de delegar escrita; preservar transações, idempotência, razão, trava ordenada entre fazendas e main. Nenhum pagamento/saque.
+- Prévia local em http://127.0.0.1:8860/play/; não anunciar backend hospedado. Testes CI automáticos por envio; sem serviço permanente de desenvolvimento.

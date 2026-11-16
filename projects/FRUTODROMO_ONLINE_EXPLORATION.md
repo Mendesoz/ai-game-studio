@@ -1,5 +1,17 @@
 # Brotalume — fazenda idle (nome de trabalho proposto)
 
+## Mapa e cliente online concluídos — 16/11/2026
+Esta seção substitui o estado anterior de API sem cliente.
+- Eric pediu continuar o desenvolvimento. Codex entregou cliente jogável com cadastro/login, mapa contínuo, expansão adjacente, produção/encomenda e layout/personagem salvos no servidor.
+- [PR #30](https://github.com/Mendesoz/frutodromo/pull/30), branch `codex/fazenda-online-base`. Código validado23610f52d479996caeba15935f72535240dd0732, documentação112bdf7d7bb451f78609a12e9f8ebfc4421cd068. Sem merge na main.
+- **28 testes PASS** local e [PostgreSQL17 real na CI43849272070](https://github.com/Mendesoz/frutodromo/actions/runs/43849272070), build/auditoria/sintaxe PASS. [QA e evidências](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/QA_MAPA_ONLINE_2026-11-16.md).
+- Browser real: cadastro, milho→ração→ovo→pedido (+18moedas), terreno60moedas, movimento por campos/arraste/toque, bloqueios de sobreposição/terra alheia, personagem e recarga persistentes. Quatro telas (393×760,1024×600,900×430,1280×680) sem rolagem horizontal; escala inteira1×/2×.
+- Falha controlada depois de comando confirmado no backend: reenvio pela UI preservou um único débito/item. Poll continuou com pedido pendente. Após401 e entrada em outra conta, pedido anterior descartado, nova fazenda80moedas/4milhos sem reenvio indevido.
+- Claude implementou layout, migração003, move/customize e9testes nos arquivos delegados; Codex integrou cliente e executou. Claude também revisou cliente e correções finais, somente leitura; achados pertinentes aplicados. Relatórios no repositório, não presumir comunicação com o chat antigo.
+- **Prévia local:** http://127.0.0.1:8860/play/ . Não há backend publicamente hospedado; a prévia Cloudflare antiga permanece um protótipo separado. Frutódromo publicado e saves não alterados.
+- Etapa2 do [plano até30/11](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/PLANO_NOVEMBRO.md) concluída antes do alvo. Próximo: etapa3, comércio virtual entre duas contas (reserva de lote, compra/cancelamento atômicos, travas ordenadas e conservação de saldo/estoque). [Fila#31](https://github.com/Mendesoz/frutodromo/issues/31).
+- Pagamentos/saques, ligas e hospedagem pública não entregues. Safari/iPhone físico, carga, balanceamento e retenção ainda não medidos. Brotalume permanece nome de trabalho.
+
 ## Base online autorizada e validada — 15/11/2026
 Esta seção prevalece sobre os registros históricos abaixo.
 - Eric autorizou seguir a base proposta pelo Codex, construir banco/backend, incluir Claude e automatizar verificações para buscar um alpha fechado até **30/11/2026**. Meta de desenvolvimento, sem promessa de publicação comercial.
