@@ -6,7 +6,7 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
 | 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Site publicado; rascunho CrazyGames criado, envio manual com Eric | Eric conclui QA/formulário e informa o resultado; prévia falhou antes de carregar o jogo no navegador do Codex | Codex: integração/publicação/pacote concluídos; Claude: QA local concluído; Eric: envio manual |
-| 2 | [Brotalume — nome proposto](FRUTODROMO_ONLINE_EXPLORATION.md) | Piloto local jogável com conta, mapa expansível, produção e layout persistentes;28testes verdes e QA no PR#30 | Etapas1–2 concluídas; próximo comércio virtual entre duas contas. Meta alpha30/11, plano/issue#31 na ficha | Codex: implementação/integração/QA; Claude: layout/testes e revisão independente |
+| 2 | [Brotalume — nome proposto](FRUTODROMO_ONLINE_EXPLORATION.md) | Piloto local jogável: conta, mapa expansível, produção e layout persistentes;29testes verdes e QA no PR#30 | Etapas1–2 concluídas; próximo comércio virtual entre duas contas. Meta alpha30/11, plano/issue#31 na ficha | Codex: implementação/integração/QA; Claude: layout/testes e revisão independente |
 | 3 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 4 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
 

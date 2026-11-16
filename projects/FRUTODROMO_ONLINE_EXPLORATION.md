@@ -3,9 +3,10 @@
 ## Mapa e cliente online concluídos — 16/11/2026
 Esta seção substitui o estado anterior de API sem cliente.
 - Eric pediu continuar o desenvolvimento. Codex entregou cliente jogável com cadastro/login, mapa contínuo, expansão adjacente, produção/encomenda e layout/personagem salvos no servidor.
-- [PR #30](https://github.com/Mendesoz/frutodromo/pull/30), branch `codex/fazenda-online-base`. Código validado23610f52d479996caeba15935f72535240dd0732, documentação112bdf7d7bb451f78609a12e9f8ebfc4421cd068. Sem merge na main.
-- **28 testes PASS** local e [PostgreSQL17 real na CI43849272070](https://github.com/Mendesoz/frutodromo/actions/runs/43849272070), build/auditoria/sintaxe PASS. [QA e evidências](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/QA_MAPA_ONLINE_2026-11-16.md).
+- [PR #30](https://github.com/Mendesoz/frutodromo/pull/30), branch `codex/fazenda-online-base`. Código validado3d113ecb45435c83291198dd48c2d0e8910677a5, documentação17e20d31d6ec4dd1ed4ff596bae7ebb8cf03c1b1. Sem merge na main.
+- **29 testes PASS** local e [PostgreSQL17 real na CI43850499270](https://github.com/Mendesoz/frutodromo/actions/runs/43850499270), build/auditoria/sintaxe PASS. [QA e evidências](https://github.com/Mendesoz/frutodromo/blob/codex/fazenda-online-base/docs/online/QA_MAPA_ONLINE_2026-11-16.md).
 - Browser real: cadastro, milho→ração→ovo→pedido (+18moedas), terreno60moedas, movimento por campos/arraste/toque, bloqueios de sobreposição/terra alheia, personagem e recarga persistentes. Quatro telas (393×760,1024×600,900×430,1280×680) sem rolagem horizontal; escala inteira1×/2×.
+- Guarda adicional: comandos do cliente informam a fazenda esperada; troca de cookie para outra conta é recusada dentro da transação. Caso HTTP automatizado provou zero efeitos na outra fazenda.
 - Falha controlada depois de comando confirmado no backend: reenvio pela UI preservou um único débito/item. Poll continuou com pedido pendente. Após401 e entrada em outra conta, pedido anterior descartado, nova fazenda80moedas/4milhos sem reenvio indevido.
 - Claude implementou layout, migração003, move/customize e9testes nos arquivos delegados; Codex integrou cliente e executou. Claude também revisou cliente e correções finais, somente leitura; achados pertinentes aplicados. Relatórios no repositório, não presumir comunicação com o chat antigo.
 - **Prévia local:** http://127.0.0.1:8860/play/ . Não há backend publicamente hospedado; a prévia Cloudflare antiga permanece um protótipo separado. Frutódromo publicado e saves não alterados.
