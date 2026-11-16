@@ -6,7 +6,7 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
 | 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Site publicado; rascunho CrazyGames criado, envio manual com Eric | Eric conclui QA/formulário e informa o resultado; prévia falhou antes de carregar o jogo no navegador do Codex | Codex: integração/publicação/pacote concluídos; Claude: QA local concluído; Eric: envio manual |
-| 2 | [Brotalume — nome proposto](FRUTODROMO_ONLINE_EXPLORATION.md) | Piloto local com conta, mapa, produção, expansão e feira P2P entre contas;44testes PostgreSQL e QA no PR30 | Etapas1–3 concluídas; próximo automação limitada, depois candidata de teste fechado. Meta30/11, plano/issue31 na ficha | Codex: integração/cliente/QA; Claude: módulos/testes e revisão |
+| 2 | [Brotalume — nome proposto](FRUTODROMO_ONLINE_EXPLORATION.md) | Piloto local com conta, mapa, produção, feira e caminhada WASD; cenário candidato,55testes PostgreSQL no PR30 | Duas frentes: acabamento visual e automação limitada; Gabriuus começa issue32, fila32–35. Meta30/11, plano/issue31 na ficha | Codex: integração/cliente/QA; Claude: módulos/testes e revisão |
 | 3 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 4 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
 
@@ -36,3 +36,5 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 - 16/11/2026: mapa/cliente online concluídos no piloto local, antes do alvo19–22/11. Comércio P2P segue próximo; backend público, ligas e pagamentos não entregues. Conferir ficha e QA, não a prévia Cloudflare histórica.
 
 - 16/11/2026: etapa3 fechada antes do alvo23–26/11: negociação virtual na UI e44testes PostgreSQL verdes. Próximo etapa4. Claude confirmou handoff41ef83e; VIP/comissão do protótipo separado seguem na descoberta. Ver ficha atual para SHAs e evidências.
+
+- 16/11/2026: Eric separou visual/funcional e pediu WASD; referências visuais Stardew/Don't Starve/Sunflower. Cenário candidato e caminhada integrados, ainda sem aprovação estética. Onboarding e issues32–35 para Gabriuus preparados; read confirmado, atribuição recusada, nenhum convite enviado. Ver ficha para QA/CI/limites.
