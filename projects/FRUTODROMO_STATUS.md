@@ -2,7 +2,7 @@
 
 ## Atualização mais recente — avatar da fazenda, 16/11/2026
 
-Na branch local `codex/fazenda-online-base` (base `dcf6c5a`), Codex integrou no cliente do piloto o atlas ilustrado aprovado para a Iara: quatro direções e três quadros de movimento, servidos em `/play/farmer-atlas.png`. Eric pediu escala próxima ao avatar pequeno da referência Pokeidle; canvas lógico ajustado de 24×40 para 16×26 (32×52 no zoom 2; 16×26 no zoom 1). A prévia de navegador foi conferida após o ajuste e conserva WASD/botões móveis. Registro técnico em `docs/online/QA_SPRITE_AVATAR_2026-11-16.md`; preview local `http://127.0.0.1:8874/farmer-browser-preview`.
+Na branch local `codex/fazenda-online-base` (HEAD local antes dessas alterações: `dcf6c5a`), Codex integrou no cliente do piloto o atlas ilustrado aprovado para a Iara: quatro direções e três quadros de movimento, servidos em `/play/farmer-atlas.png`. Eric pediu escala próxima ao avatar pequeno da referência Pokeidle; canvas lógico ajustado de 24×40 para 16×26 (32×52 no zoom 2; 16×26 no zoom 1). A prévia de navegador foi conferida após o ajuste e conserva WASD/botões móveis. Registro técnico em `docs/online/QA_SPRITE_AVATAR_2026-11-16.md`; preview local `http://127.0.0.1:8874/farmer-browser-preview`.
 
 Limites: revisão visual feita na cena isolada; ainda falta conferir o mapa conectado em desktop e celular. Build, CI e regressão não foram executados nesta alteração. Os demais personagens, saves, economia, API e banco não foram alterados. A implementação e a nota de QA seguem como mudanças locais não commitadas; não houve push para o repositório do jogo. Próximo passo: conferir avatar no mapa conectado em dois tamanhos e então atualizar o status do marco.
 
