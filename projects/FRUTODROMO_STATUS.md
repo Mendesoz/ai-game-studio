@@ -1,5 +1,13 @@
 # Frutódromo — status e retomada para agentes
 
+## Decisão de produto aprovada — expansão híbrida e monetização, 17/11/2026
+
+Eric confirmou que o jogo combina fazenda personalizável, produção idle, monetização do produto e possibilidade de ganhos para jogadores. A expansão segue o modelo híbrido: marcos de progresso liberam novas áreas; moedas ou materiais do jogo são usados para ocupá-las. A terra básica não dependerá de pagamento real.
+
+Essa direção deve ser considerada na economia e na arquitetura desde já. O alpha atual continua com economia virtual resetável, sem compras, conversão ou saques. Ainda não foram escolhidos fonte de receita, itens pagos, fonte dos valores pagos a jogadores, taxas, preços, conversão ou modelo de saque. Isso registra a direção aprovada, não uma promessa de rendimento nem autorização para ativar pagamentos reais nesta etapa.
+
+A documentação local foi atualizada em `docs/online/ECONOMY_AND_GROWTH.md`, `DIRECAO_ATUAL.md`, `PLANO_NOVEMBRO.md` e `server/README.md`, branch `codex/fazenda-online-base`. As mudanças do projeto ainda estão locais e sem commit/push; o piloto não foi modificado por essa decisão documental.
+
 ## Atualização mais recente — avatar da fazenda, 16/11/2026
 
 Na branch local `codex/fazenda-online-base` (HEAD local antes dessas alterações: `dcf6c5a`), Codex integrou no cliente do piloto o atlas ilustrado aprovado para a Iara: quatro direções e três quadros de movimento, servidos em `/play/farmer-atlas.png`. Eric pediu escala próxima ao avatar pequeno da referência Pokeidle; canvas lógico ajustado de 24×40 para 16×26 (32×52 no zoom 2; 16×26 no zoom 1). A prévia de navegador foi conferida após o ajuste e conserva WASD/botões móveis. Registro técnico em `docs/online/QA_SPRITE_AVATAR_2026-11-16.md`; preview local `http://127.0.0.1:8874/farmer-browser-preview`.
