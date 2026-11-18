@@ -1,5 +1,13 @@
 # Frutódromo — status e retomada para agentes
 
+## Direção atualizada — projeto sucessor e economia financiada por jogadores, 17/11/2026
+
+Eric esclareceu que a fazenda idle online é o projeto principal e substitui o Frutódromo como produto-alvo. CrazyGames deixa de ser objetivo; registros anteriores sobre o envio do Frutódromo ao portal são históricos. O produto pretendido é um jogo próprio de navegador, com objetivo de receita mensal alta, sem capital externo previsto. A hipótese comercial é que pagamentos dos jogadores financiem o negócio e que a possibilidade de ganho/saque dê motivo para pagar. O que o jogador compra, quais direitos recebe, como se cria receita, de onde sai o saque e qual é o modelo financeiro continuam por definir. Nenhum rendimento é prometido, e o alpha atual não processa pagamentos ou saques.
+
+A forma como a oferta é divulgada e estruturada importa. A CVM lista investimento, caráter coletivo, expectativa de benefício, esforço do empreendedor/terceiro e oferta pública entre critérios para analisar contratos de investimento coletivo; casos concretos exigem análise própria. [Orientação oficial da CVM](https://www.gov.br/investidor/pt-br/investir/tipos-de-investimentos/crowdfunding-de-investimento). Não solicitar dinheiro com expectativa de rendimento nem oferecer saque antes de definir a estrutura e obter orientação jurídica brasileira.
+
+A expansão híbrida permanece aprovada: marcos de progresso liberam terrenos; moedas e materiais do jogo permitem ocupá-los. Fonte local atualizada: `docs/online/README.md`, `DIRECAO_ATUAL.md`, `ECONOMY_AND_GROWTH.md`, `PLANO_NOVEMBRO.md` e `server/README.md`, branch `codex/fazenda-online-base`. Essas alterações documentais estão locais, sem commit/push no repositório do jogo.
+
 ## Decisão de produto aprovada — expansão híbrida e monetização, 17/11/2026
 
 Eric confirmou que o jogo combina fazenda personalizável, produção idle, monetização do produto e possibilidade de ganhos para jogadores. A expansão segue o modelo híbrido: marcos de progresso liberam novas áreas; moedas ou materiais do jogo são usados para ocupá-las. A terra básica não dependerá de pagamento real.
