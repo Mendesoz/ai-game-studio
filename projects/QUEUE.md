@@ -5,7 +5,7 @@ Atualizada em 19/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 ## Fila atual
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
-| 1 | [Brotalume — nome de trabalho](BROTALUME_STATUS.md) | Produto principal; cena A navegável em preview local; nome e arte final pendentes | Validar composição/escala e preparar três opções visuais para casa/pátio; depois integrar a direção escolhida ao mapa | Codex + Claude; Eric decide design |
+| 1 | [Brotalume — nome de trabalho](BROTALUME_STATUS.md) | Produto principal; cena A navegável; três propostas de casa/pátio prontas para escolha; nome e arte final pendentes | Eric escolhe uma opção visual ou pede ajustes; depois refinamos e integramos a direção ao mapa | Codex + Claude; Eric decide design |
 | 2 | [Frutódromo original (legado)](FRUTODROMO_STATUS.md) | Site publicado; histórico do rascunho CrazyGames preservado; CrazyGames saiu do escopo atual | Manutenção somente se necessária | Codex + Claude conforme surgir demanda |
 | 3 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 4 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
