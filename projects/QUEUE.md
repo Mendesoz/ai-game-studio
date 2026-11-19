@@ -1,22 +1,20 @@
 # Fila de jogos do AI Game Studio
 
-Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o próximo jogo à medida que o anterior for concluído.
+Atualizada em 19/11/2026. Solicitação do Eric: manter uma fila e iniciar o próximo jogo à medida que o anterior for concluído.
 
 ## Fila atual
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
-| 1 | [Frutódromo](FRUTODROMO_STATUS.md) | Site publicado; rascunho CrazyGames criado, envio manual com Eric | Eric conclui QA/formulário e informa o resultado; prévia falhou antes de carregar o jogo no navegador do Codex | Codex: integração/publicação/pacote concluídos; Claude: QA local concluído; Eric: envio manual |
-| 2 | [Brotalume — nome proposto](FRUTODROMO_ONLINE_EXPLORATION.md) | Piloto local com conta, mapa, produção, feira e caminhada WASD; cenário candidato,55testes PostgreSQL no PR30 | Duas frentes: acabamento visual e automação limitada; Gabriuus começa issue32, fila32–35. Meta30/11, plano/issue31 na ficha | Codex: integração/cliente/QA; Claude: módulos/testes e revisão |
+| 1 | [Brotalume — nome de trabalho](BROTALUME_STATUS.md) | Produto principal; cena A navegável em preview local; nome e arte final pendentes | Validar composição/escala e preparar três opções visuais para casa/pátio; depois integrar a direção escolhida ao mapa | Codex + Claude; Eric decide design |
+| 2 | [Frutódromo original (legado)](FRUTODROMO_STATUS.md) | Site publicado; histórico do rascunho CrazyGames preservado; CrazyGames saiu do escopo atual | Manutenção somente se necessária | Codex + Claude conforme surgir demanda |
 | 3 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 4 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
 
 ## Como avançar
-- Manter um jogo principal em produção. Enquanto ele fecha, a descoberta do próximo pode produzir apenas referências, opções e um brief curto.
-- Depois do envio aprovado do jogo atual ao portal, começar o próximo protótipo aprovado sem esperar passivamente a decisão da plataforma.
-- Não tratar submissão, Basic Launch e Full Launch como o mesmo marco. A análise do portal e o acompanhamento do jogo anterior continuam em paralelo.
-- A fila orienta o trabalho, mas não dispara agentes nem autoriza implementação, gastos ou publicação automaticamente.
+- Manter um jogo principal em produção. Brotalume é o projeto atual; o Frutódromo original fica como legado.
+- A fila organiza trabalho, mas não dispara agentes nem autoriza gastos ou publicação automaticamente.
 - Só avançar para produção após o Eric aprovar conceito e escopo. Usar [GAME_BRIEF.md](../templates/GAME_BRIEF.md).
-- Manutenção e bugs críticos dos jogos publicados têm prioridade; evitar novas funcionalidades durante o fechamento de uma versão.
+- Manutenção e bugs críticos dos jogos publicados têm prioridade, sem recolocar CrazyGames no escopo do Frutódromo.
 
 ## Registro de decisão
 - 14/11/2026, Eric: quer uma fila contínua de jogos e explorar multiplayer; citou Dead by Daylight e PEAK como referências, sem conceito concreto.
@@ -34,6 +32,10 @@ Atualizada em 14/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 - 15/11/2026, Eric: autorizou seguir a base recomendada, construir banco/backend e incluir Claude para acelerar, buscando algo concreto até30/11. Plano no PR#30/issue#31; datas são metas. Não autoriza pagamentos/saques ou publicação comercial. Base técnica validada; cliente conectado/comércio são próximos marcos.
 
 - 16/11/2026: mapa/cliente online concluídos no piloto local, antes do alvo19–22/11. Comércio P2P segue próximo; backend público, ligas e pagamentos não entregues. Conferir ficha e QA, não a prévia Cloudflare histórica.
+
+- 17/11/2026, Eric: a fazenda online substitui o Frutódromo como produto; CrazyGames sai do escopo; jogadores financiam o negócio e eventual retorno sacável faz parte da hipótese. Estrutura de receita/saque permanece sem decisão. Expansão híbrida aprovada.
+- 17/11/2026, Eric: escolheu a composição A, pátio central, como base visual para prototipar; não equivale à aprovação da arte final.
+- 19/11/2026, Codex: cena A navegável montada em canvas local e aberta no browser. Caminhada simples, caminhos, casa, dois canteiros, galinheiro, bosque e clareira; assets reaproveitados do renderer existente. HTTP local e túnel responderam; não houve QA em iPhone físico. Arquivos estão na árvore local de `codex/fazenda-online-base`, sem commit/push.
 
 - 16/11/2026: etapa3 fechada antes do alvo23–26/11: negociação virtual na UI e44testes PostgreSQL verdes. Próximo etapa4. Claude confirmou handoff41ef83e; VIP/comissão do protótipo separado seguem na descoberta. Ver ficha atual para SHAs e evidências.
 

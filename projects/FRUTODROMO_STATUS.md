@@ -1,5 +1,7 @@
 # Frutódromo — status e retomada para agentes
 
+> **Registro histórico:** desde 17/11/2026, Brotalume (nome de trabalho) substitui o Frutódromo como produto principal. CrazyGames não é mais objetivo. Veja o [status atual do Brotalume](BROTALUME_STATUS.md); as anotações abaixo preservam o estado e lançamento do jogo original.
+
 ## Direção atualizada — projeto sucessor e economia financiada por jogadores, 17/11/2026
 
 Eric esclareceu que a fazenda idle online é o projeto principal e substitui o Frutódromo como produto-alvo. CrazyGames deixa de ser objetivo; registros anteriores sobre o envio do Frutódromo ao portal são históricos. O produto pretendido é um jogo próprio de navegador, com objetivo de receita mensal alta, sem capital externo previsto. A hipótese comercial é que pagamentos dos jogadores financiem o negócio e que a possibilidade de ganho/saque dê motivo para pagar. O que o jogador compra, quais direitos recebe, como se cria receita, de onde sai o saque e qual é o modelo financeiro continuam por definir. Nenhum rendimento é prometido, e o alpha atual não processa pagamentos ou saques.

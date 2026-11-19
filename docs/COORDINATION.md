@@ -25,7 +25,11 @@ Registrar de forma curta:
 
 Preservar o histórico e identificar o que substitui registros antigos. Conferir a versão remota antes de enviar uma atualização para preservar o trabalho do outro agente. Preferir uma alteração pequena e focada.
 
-## Frutódromo: prioridades atuais
+## Prioridade atual: Brotalume
+
+Desde 17/11/2026, Eric definiu a fazenda online como produto principal, substituindo o Frutódromo. O guia atual e o próximo marco ficam em [BROTALUME_STATUS.md](../projects/BROTALUME_STATUS.md). CrazyGames deixou de ser objetivo. Preserve o Frutódromo original como legado publicado.
+
+## Frutódromo original — registro histórico de prioridades
 Decisões comunicadas pelo Eric em 14/11/2026:
 - Jogo exclusivo de navegador, com suporte ao computador e ao celular em pé como orientação principal no telefone.
 - Rodar bem no iPhone é um diferencial. A adaptação horizontal deve ser avaliada no contexto do CrazyGames, sem deslocar a prioridade do celular em pé.
