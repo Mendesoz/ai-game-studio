@@ -1,6 +1,6 @@
 # Brotalume — fazenda idle de navegador
 
-Atualizado em 19/11/2026. **Brotalume é nome de trabalho**; Eric ainda não confirmou nome definitivo. Este é o projeto principal de jogo. Ele substitui o Frutódromo como produto em desenvolvimento. O jogo original permanece como legado publicado; CrazyGames saiu dos objetivos deste projeto.
+Atualizado em 20/11/2026. **Brotalume é nome de trabalho**; Eric ainda não confirmou nome definitivo. Este é o projeto principal de jogo. Ele substitui o Frutódromo como produto em desenvolvimento. O jogo original permanece como legado publicado; CrazyGames saiu dos objetivos deste projeto.
 
 ## Direção aprovada pelo Eric
 
@@ -9,6 +9,16 @@ Atualizado em 19/11/2026. **Brotalume é nome de trabalho**; Eric ainda não con
 - O financiamento virá dos jogadores; a hipótese de que jogadores possam obter retorno sacável faz parte da visão. Fonte dos pagamentos, compras, direitos, conversão, taxas, saque, liquidez e modelo financeiro estão por definir. O protótipo atual não recebe dinheiro nem realiza pagamentos/saques.
 - Gameplay usa ideias de expansão/base de Clash of Clans e fazenda de Hay Day como referências. A direção visual é própria: fábula acolhedora em pixel art, formas orgânicas, inspirada por Stardew Valley e Don't Starve; referências não autorizam copiar ativos ou interface.
 - Dispositivos-alvo: computador e celular em pé. CrazyGames não é objetivo.
+
+## Arquitetura de fazendas e regiões
+
+Em 20/11/2026, Eric aprovou para planejamento a arquitetura de fazendas individuais com visitas assíncronas, economia compartilhada e regiões desbloqueáveis. O detalhamento técnico está em [BROTALUME_ARCHITECTURE.md](BROTALUME_ARCHITECTURE.md). Isto orienta o desenho dos próximos marcos; não significa que visitas, produção offline ou regiões estejam implementadas.
+
+- Cada jogador é dono de uma fazenda persistente. Outras pessoas podem visitá-la mesmo com o dono offline; visitas não exigem sincronizar posições em tempo real.
+- Produção offline calcula o resultado a partir de horários persistidos no backend. O servidor valida produção/colheita, inventário, negociações e recompensas; não simula continuamente todas as fazendas.
+- O mercado global compartilha a economia entre jogadores e transações são validadas no backend.
+- Regiões especializadas são desbloqueadas por progressão, recursos e missões e carregadas separadamente. Bosque e Porto são exemplos iniciais, sem compromisso com escopo final.
+- Prioridade aprovada: fazenda principal e produção offline → visitas assíncronas → mercado global consolidado → primeira região → expansões futuras orientadas por retenção/demanda.
 
 ## Visual e mapa
 
@@ -26,9 +36,10 @@ Atualizado em 19/11/2026. **Brotalume é nome de trabalho**; Eric ainda não con
 
 1. Continuar refinando o mapa desenhado por código com foco em iluminação, relevo do chão, animais e legibilidade dos canteiros; usar a cena gerada apenas como referência visual.
 2. Avaliar o resultado no telefone em pé e ajustar escala/controles, depois apresentar ao Eric para decisão estética.
-3. Integrar a família de ativos escolhida ao mapa real do cliente, preservando dados e caminhada; implementar expansão e edição de fazenda com critérios próprios.
-4. Manter a monetização como discovery até existir modelo que explique o que o jogador paga, que valor recebe e como seriam financiados eventuais saques. Sem prometer retorno nem implementar fluxo de dinheiro real agora.
-5. Ao concluir cada marco, atualizar esta ficha e a fila; preservar a versão publicada do Frutódromo.
+3. Converter a arquitetura aprovada em marcos técnicos: persistência e produção offline na fazenda principal; depois visita assíncrona; então consolidar mercado global; por fim primeira região carregada separadamente.
+4. Definir limites/regras ainda em aberto (permissões de visita, limites de produção offline, desbloqueios e regras de listagem/transação) durante o desenho de cada marco, sem antecipar implementação.
+5. Manter monetização como discovery até existir modelo que explique o que o jogador paga, que valor recebe e como seriam financiados eventuais saques. Sem prometer retorno nem implementar fluxo de dinheiro real agora.
+6. Ao concluir cada marco, atualizar esta ficha e a fila; preservar a versão publicada do Frutódromo.
 
 ## Evidência e limites
 
