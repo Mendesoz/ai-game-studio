@@ -5,7 +5,7 @@ Atualizada em 19/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 ## Fila atual
 | Ordem | Projeto | Estado | Próximo passo | Responsáveis |
 |---|---|---|---|---|
-| 1 | [Brotalume — nome de trabalho](BROTALUME_STATUS.md) | Produto principal; preview navegável em duas versões: cenário gerado e mapa feito por código; arte final pendente | Eric compara as duas versões; depois modularizar a direção escolhida para suportar personalização e expansão | Codex + Claude; Eric decide design |
+| 1 | [Brotalume — nome de trabalho](BROTALUME_STATUS.md) | Produto principal; mapa ativo é o composto por código; arte gerada fica como referência de atmosfera | Refinar chão, plantas, galinhas e luz no mapa codificado; conferir no telefone e apresentar ao Eric | Codex + Claude; Eric decide design |
 | 2 | [Frutódromo original (legado)](FRUTODROMO_STATUS.md) | Site publicado; histórico do rascunho CrazyGames preservado; CrazyGames saiu do escopo atual | Manutenção somente se necessária | Codex + Claude conforme surgir demanda |
 | 3 | [Matemática como jogo de aventura/estratégia](MATH_GAME_EXPLORATION.md) | Ideia apresentada; gênero e conceito em discussão, sem produção aprovada | Primeiro caso: FUVEST 2013 Q23, Eratóstenes; discutir mecânica a partir da questão; Coquinhos é referência do que evitar | Codex + Claude no escopo; Eric decide o conceito |
 | 4 | [Perseguição e fuga no navegador](NEXT_GAME_EXPLORATION.md) | Exploração anterior preservada no backlog; sem escopo aprovado | Retomar quando Eric priorizar | Eric + agentes |
@@ -37,6 +37,7 @@ Atualizada em 19/11/2026. Solicitação do Eric: manter uma fila e iniciar o pr�
 - 17/11/2026, Eric: escolheu a composição A, pátio central, como base visual para prototipar; não equivale à aprovação da arte final.
 - 19/11/2026, Codex: cena A navegável montada em canvas local e aberta no browser. Caminhada simples, caminhos, casa, dois canteiros, galinheiro, bosque e clareira; assets reaproveitados do renderer existente. HTTP local e túnel responderam; não houve QA em iPhone físico. Arquivos estão na árvore local de `codex/fazenda-online-base`, sem commit/push.
 - 19/11/2026, Eric: gostou da primeira proposta gerada e pediu um protótipo de jogo funcional que use a ilustração, para comparar com a versão feita por código. Codex entregou a rota gerada com avatar, movimento, produção temporal e coleta de teste. Arte não está aprovada como final; o cenário único não dá ainda suporte a edição/expansão dos objetos.
+- 19/11/2026, Eric: pediu continuar sem usar a arte gerada como fundo, melhorando a versão por código com ambientação, galinhas móveis e plantas com forma/volume. Codex adicionou duas galinhas passeando/ciscando, canteiros folhosos e de morangos, balanço de folhas/flores, borboletas e fumaça da chaminé. Prévia no browser; sem teste físico em iPhone, sem integração ao mapa real.
 
 - 16/11/2026: etapa3 fechada antes do alvo23–26/11: negociação virtual na UI e44testes PostgreSQL verdes. Próximo etapa4. Claude confirmou handoff41ef83e; VIP/comissão do protótipo separado seguem na descoberta. Ver ficha atual para SHAs e evidências.
 
