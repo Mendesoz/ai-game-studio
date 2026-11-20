@@ -12,13 +12,14 @@ Atualizado em 20/11/2026. **Brotalume é nome de trabalho**; Eric ainda não con
 
 ## Arquitetura de fazendas e regiões
 
-Em 20/11/2026, Eric aprovou para planejamento a arquitetura de fazendas individuais com visitas assíncronas, economia compartilhada e regiões desbloqueáveis. O detalhamento técnico está em [BROTALUME_ARCHITECTURE.md](BROTALUME_ARCHITECTURE.md). Isto orienta o desenho dos próximos marcos; não significa que visitas, produção offline ou regiões estejam implementadas.
+Em 20/11/2026, Eric aprovou para planejamento a arquitetura de fazendas individuais com visitas assíncronas, economia compartilhada e regiões desbloqueáveis. O detalhamento técnico está em [BROTALUME_ARCHITECTURE.md](BROTALUME_ARCHITECTURE.md). Isto orienta os próximos marcos; não implica que todo o sistema esteja implementado.
 
 - Cada jogador é dono de uma fazenda persistente. Outras pessoas podem visitá-la mesmo com o dono offline; visitas não exigem sincronizar posições em tempo real.
 - Produção offline calcula o resultado a partir de horários persistidos no backend. O servidor valida produção/colheita, inventário, negociações e recompensas; não simula continuamente todas as fazendas.
 - O mercado global compartilha a economia entre jogadores e transações são validadas no backend.
 - Regiões especializadas são desbloqueadas por progressão, recursos e missões e carregadas separadamente. Bosque e Porto são exemplos iniciais, sem compromisso com escopo final.
 - Prioridade aprovada: fazenda principal e produção offline → visitas assíncronas → mercado global consolidado → primeira região → expansões futuras orientadas por retenção/demanda.
+- Auditoria do código em 20/11: a fazenda principal e produção offline já existem no piloto local, com `started_at`/`finishes_at`, relógio de fazenda monotônico e acerto ao ler/executar ações, sem loop global. A próxima capacidade ainda não implementada é visitar outra fazenda. Proposta técnica de visitas somente leitura, com link explícito revogável: [VISITAS_ASSINCRONAS.md](https://github.com/Mendesoz/frutodromo/blob/7eb0cc4/docs/online/VISITAS_ASSINCRONAS.md). Política de privacidade/campos públicos continuam propostas, não decisões aprovadas.
 
 ## Visual e mapa
 

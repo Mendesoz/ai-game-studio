@@ -26,7 +26,7 @@
 4. Criar a primeira região desbloqueável.
 5. Expandir o mundo de acordo com retenção e demanda observadas.
 
-Essa ordem é prioridade de planejamento, não uma declaração de que as etapas já estejam implementadas ou prontas para produção. O status técnico de cada etapa deve ser confirmado no repositório do jogo e registrado na [ficha do projeto](BROTALUME_STATUS.md).
+Essa ordem é prioridade de planejamento, não uma declaração de que as etapas estejam prontas para produção. Auditoria do código local em 20/11 identificou que a fazenda principal e produção offline por timestamps já existem no piloto; visitas assíncronas ainda não estão implementadas. O próximo desenho de visitas está em [VISITAS_ASSINCRONAS.md](https://github.com/Mendesoz/frutodromo/blob/7eb0cc4/docs/online/VISITAS_ASSINCRONAS.md). Sua proteção por link e projeção pública são propostas técnicas, ainda não decisões de produto. O estado de cada etapa deve ser confirmado no repositório do jogo e registrado na [ficha do projeto](BROTALUME_STATUS.md).
 
 ## Decisões a detalhar antes de cada marco
 
